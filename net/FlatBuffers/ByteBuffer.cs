@@ -39,7 +39,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -53,7 +52,7 @@ using System.Buffers.Binary;
 
 namespace Google.FlatBuffers
 {
-    public abstract class ByteBufferAllocator
+  public abstract class ByteBufferAllocator
     {
 #if ENABLE_SPAN_T && (UNSAFE_BYTEBUFFER || NETSTANDARD2_1)
         public abstract Span<byte> Span { get; }

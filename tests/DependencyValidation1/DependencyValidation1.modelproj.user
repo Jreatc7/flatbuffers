@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ReferencePath>"C:\Users\jepst\source\repos\Jreatc7\flatbuffers";C:\Users\jepst\source\repos\Jreatc7\flatbuffers\tests\DependencyValidation1\bin;C:\Program Files\MSBuild</ReferencePath>
+  </PropertyGroup>
+</Project>

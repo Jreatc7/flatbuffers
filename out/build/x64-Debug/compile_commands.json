@@ -1,0 +1,357 @@
+[
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatbuffers.dir\\src\\idl_parser.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_parser.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_parser.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatbuffers.dir\\src\\idl_gen_text.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_text.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_text.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatbuffers.dir\\src\\reflection.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\reflection.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\reflection.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatbuffers.dir\\src\\util.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\util.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\util.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_parser.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_parser.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_parser.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_gen_text.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_text.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_text.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\reflection.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\reflection.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\reflection.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\util.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\util.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\util.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_gen_cpp.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_cpp.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_cpp.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_gen_csharp.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_csharp.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_csharp.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_gen_dart.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_dart.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_dart.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_gen_kotlin.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_kotlin.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_kotlin.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_gen_go.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_go.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_go.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_gen_java.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_java.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_java.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_gen_ts.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_ts.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_ts.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_gen_php.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_php.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_php.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_gen_python.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_python.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_python.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_gen_lobster.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_lobster.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_lobster.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_gen_lua.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_lua.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_lua.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_gen_rust.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_rust.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_rust.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_gen_fbs.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_fbs.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_fbs.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_gen_grpc.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_grpc.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_grpc.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_gen_json_schema.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_json_schema.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_json_schema.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\idl_gen_swift.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_swift.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_swift.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\flatc.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\flatc.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\flatc.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\flatc_main.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\flatc_main.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\flatc_main.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\binary_annotator.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\binary_annotator.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\binary_annotator.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\annotated_binary_text_gen.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\annotated_binary_text_gen.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\annotated_binary_text_gen.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\bfbs_gen_lua.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\bfbs_gen_lua.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\bfbs_gen_lua.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\bfbs_gen_nim.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\bfbs_gen_nim.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\bfbs_gen_nim.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\src\\code_generators.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\code_generators.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\code_generators.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\grpc\\src\\compiler\\cpp_generator.cc.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc\\src\\compiler\\cpp_generator.cc",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc\\src\\compiler\\cpp_generator.cc"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\grpc\\src\\compiler\\go_generator.cc.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc\\src\\compiler\\go_generator.cc",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc\\src\\compiler\\go_generator.cc"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\grpc\\src\\compiler\\java_generator.cc.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc\\src\\compiler\\java_generator.cc",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc\\src\\compiler\\java_generator.cc"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\grpc\\src\\compiler\\python_generator.cc.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc\\src\\compiler\\python_generator.cc",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc\\src\\compiler\\python_generator.cc"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\grpc\\src\\compiler\\swift_generator.cc.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc\\src\\compiler\\swift_generator.cc",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc\\src\\compiler\\swift_generator.cc"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatc.dir\\grpc\\src\\compiler\\ts_generator.cc.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc\\src\\compiler\\ts_generator.cc",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc\\src\\compiler\\ts_generator.cc"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flathash.dir\\src\\flathash.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\flathash.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\flathash.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\src\\idl_parser.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_parser.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_parser.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\src\\idl_gen_text.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_text.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_text.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\src\\reflection.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\reflection.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\reflection.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\src\\util.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\util.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\util.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\src\\idl_gen_fbs.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_fbs.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_fbs.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\tests\\evolution_test.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\evolution_test.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\evolution_test.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\tests\\flexbuffers_test.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\flexbuffers_test.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\flexbuffers_test.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\tests\\fuzz_test.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\fuzz_test.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\fuzz_test.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\tests\\json_test.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\json_test.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\json_test.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\tests\\key_field_test.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\key_field_test.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\key_field_test.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\tests\\monster_test.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\monster_test.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\monster_test.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\tests\\optional_scalars_test.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\optional_scalars_test.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\optional_scalars_test.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\tests\\parser_test.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\parser_test.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\parser_test.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\tests\\proto_test.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\proto_test.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\proto_test.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\tests\\reflection_test.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\reflection_test.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\reflection_test.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\tests\\test.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\test.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\test.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\tests\\test_assert.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\test_assert.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\test_assert.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\tests\\test_builder.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\test_builder.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\test_builder.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\tests\\util_test.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\util_test.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\util_test.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\tests\\native_type_test_impl.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\native_type_test_impl.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\native_type_test_impl.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\tests\\alignment_test.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\alignment_test.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\tests\\alignment_test.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flattests.dir\\src\\code_generators.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\code_generators.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\code_generators.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatsamplebinary.dir\\samples\\sample_binary.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\samples\\sample_binary.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\samples\\sample_binary.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatsampletext.dir\\src\\idl_parser.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_parser.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_parser.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatsampletext.dir\\src\\idl_gen_text.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_text.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_text.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatsampletext.dir\\src\\reflection.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\reflection.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\reflection.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatsampletext.dir\\src\\util.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\util.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\util.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatsampletext.dir\\samples\\sample_text.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\samples\\sample_text.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\samples\\sample_text.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatsamplebfbs.dir\\src\\idl_parser.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_parser.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_parser.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatsamplebfbs.dir\\src\\idl_gen_text.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_text.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\idl_gen_text.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatsamplebfbs.dir\\src\\reflection.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\reflection.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\reflection.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatsamplebfbs.dir\\src\\util.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\util.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\src\\util.cpp"
+},
+{
+  "directory": "C:/Users/jepst/source/repos/Jreatc7/flatbuffers/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1434~1.319\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\include -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\grpc -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\tests -IC:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\out\\build\\x64-Debug\\samples /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /W4 /wd4512 /wd4316 /wd4456 /FoCMakeFiles\\flatsamplebfbs.dir\\samples\\sample_bfbs.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\samples\\sample_bfbs.cpp",
+  "file": "C:\\Users\\jepst\\source\\repos\\Jreatc7\\flatbuffers\\samples\\sample_bfbs.cpp"
+}
+]

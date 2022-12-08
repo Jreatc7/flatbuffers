@@ -200,4 +200,8 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="NewDirectory1" />
+  </ItemGroup>
+
 </Project>

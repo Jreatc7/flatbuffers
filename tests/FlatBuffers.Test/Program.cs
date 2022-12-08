@@ -21,48 +21,44 @@ using System.Reflection;
 
 namespace Google.FlatBuffers.Test
 {
-    static class Program
+  internal static class Program
+  {
+    public static int Main(string[] args)
     {
-        public static int Main(string[] args)
-        {
-            var testResults = new List<bool>();
+      var testResults = new List<bool>();
 
-            var testClasses = Assembly.GetExecutingAssembly().GetExportedTypes()
-                .Where(t => t.IsClass && t.GetCustomAttributes(typeof (FlatBuffersTestClassAttribute), false).Length > 0);
+      var testClasses = Assembly.GetExecutingAssembly().GetExportedTypes()
+        .Where(t => t.IsClass && t.GetCustomAttributes(typeof(FlatBuffersTestClassAttribute), false).Length > 0);
 
-            foreach (var testClass in testClasses)
-            {
-                var methods = testClass.GetMethods(BindingFlags.Public |
-                                                         BindingFlags.Instance)
-                          .Where(m => m.GetCustomAttributes(typeof(FlatBuffersTestMethodAttribute), false).Length > 0);
+      foreach (var testClass in testClasses)
+      {
+        var methods = testClass.GetMethods(BindingFlags.Public |
+                                           BindingFlags.Instance)
+          .Where(m => m.GetCustomAttributes(typeof(FlatBuffersTestMethodAttribute), false).Length > 0);
 
-                var inst = Activator.CreateInstance(testClass);
+        var inst = Activator.CreateInstance(testClass);
 
-                foreach (var method in methods)
-                {
-                    try
-                    {
-                        method.Invoke(inst, new object[] { });
-                        testResults.Add(true);
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine("{0}: FAILED when invoking {1} with error {2}",
-                            testClass.Name ,method.Name, ex.GetBaseException());
-                        testResults.Add(false);
-                    }
-                }
-            }
+        foreach (var method in methods)
+          try
+          {
+            method.Invoke(inst, new object[] { });
+            testResults.Add(true);
+          }
+          catch (Exception ex)
+          {
+            Console.WriteLine("{0}: FAILED when invoking {1} with error {2}",
+              testClass.Name, method.Name, ex.GetBaseException());
+            testResults.Add(false);
+          }
+      }
 
-            var failedCount = testResults.Count(i => i == false);
+      var failedCount = testResults.Count(i => i == false);
 
-            Console.WriteLine("{0} tests run, {1} failed", testResults.Count, failedCount);
+      Console.WriteLine("{0} tests run, {1} failed", testResults.Count, failedCount);
 
-            if (failedCount > 0)
-            {
-                return -1;
-            }
-            return 0;
-        }
+      if (failedCount > 0) return -1;
+
+      return 0;
     }
+  }
 }

@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
- using System;
+using System;
 
 namespace Google.FlatBuffers.Test
 {
-    [AttributeUsage(AttributeTargets.Method)]
-    public class FlatBuffersTestMethodAttribute : Attribute
-    {
-    }
+  [AttributeUsage(AttributeTargets.Method)]
+  public class FlatBuffersTestMethodAttribute : Attribute
+  {
+  }
 }

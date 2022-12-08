@@ -3,6 +3,7 @@
 ## Running on Linux
 
 ### Prerequisites
+
 To run the tests on a Linux a few prerequisites are needed:
 
 1) mono

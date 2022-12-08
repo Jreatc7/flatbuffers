@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Properties\AssemblyInfo.cs" />
+    <Compile Remove="Properties\AssemblyInfo.cs"/>
   </ItemGroup>
 
   <PropertyGroup Condition="'$(UnsafeByteBuffer)' == 'true'">
@@ -172,11 +172,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove=".gitignore" />
-    <None Remove="clean.sh" />
-    <None Remove="NetTest.sh" />
-    <None Remove="packages.config" />
-    <None Remove="README.md" />
+    <None Remove=".gitignore"/>
+    <None Remove="clean.sh"/>
+    <None Remove="NetTest.sh"/>
+    <None Remove="packages.config"/>
+    <None Remove="README.md"/>
   </ItemGroup>
 
   <ItemGroup>
@@ -197,11 +197,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1"/>
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="NewDirectory1" />
+    <Folder Include="NewDirectory1"/>
   </ItemGroup>
 
 </Project>

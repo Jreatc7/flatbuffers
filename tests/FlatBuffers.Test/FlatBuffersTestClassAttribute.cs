@@ -21,8 +21,8 @@ using System.Text;
 
 namespace Google.FlatBuffers.Test
 {
-    [AttributeUsage(AttributeTargets.Class)]
-    public class FlatBuffersTestClassAttribute : Attribute
-    {
-    }
+  [AttributeUsage(AttributeTargets.Class)]
+  public class FlatBuffersTestClassAttribute : Attribute
+  {
+  }
 }

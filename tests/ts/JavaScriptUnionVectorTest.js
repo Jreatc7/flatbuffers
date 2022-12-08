@@ -1,10 +1,10 @@
 import assert from 'assert'
 import * as flatbuffers from 'flatbuffers'
 
-import { Character } from './union_vector/character.js'
-import { BookReader, BookReaderT } from './union_vector/book-reader.js'
-import { Attacker, AttackerT } from './union_vector/attacker.js'
-import { Movie, MovieT } from './union_vector/movie.js'
+import {Character} from './union_vector/character.js'
+import {BookReader, BookReaderT} from './union_vector/book-reader.js'
+import {Attacker, AttackerT} from './union_vector/attacker.js'
+import {Movie, MovieT} from './union_vector/movie.js'
 
 var charTypes = [
   Character.Belle,
@@ -104,7 +104,7 @@ function main() {
   Movie.finishMovieBuffer(fbb, movie_to.pack(fbb));
   var unpackBuf = new flatbuffers.ByteBuffer(fbb.asUint8Array());
   testMovieBuf(Movie.getRootAsMovie(unpackBuf));
-  
+
   console.log('FlatBuffers union vector test: completed successfully');
 }
 

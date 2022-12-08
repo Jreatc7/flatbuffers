@@ -1,4 +1,4 @@
-Use in C#    {#flatbuffers_guide_use_c-sharp}
+Use in C# {#flatbuffers_guide_use_c-sharp}
 ==============
 
 ## Before you get started
@@ -77,7 +77,7 @@ or write a FlatBuffer.
 
 For example, here is how you would read a FlatBuffer binary file in C#:
 First, import the library and generated code. Then, you read a FlatBuffer binary
-file into a `byte[]`.  You then turn the `byte[]` into a `ByteBuffer`, which you
+file into a `byte[]`. You then turn the `byte[]` into a `ByteBuffer`, which you
 pass to the `GetRootAsMyRootType` function:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.cs}
@@ -121,26 +121,27 @@ can have fast lookups directly from a FlatBuffer without having to unpack
 your data into a `Dictionary` or similar.
 
 To use it:
--   Designate one of the fields in a table as the "key" field. You do this
-    by setting the `key` attribute on this field, e.g.
-    `name:string (key)`.
-    You may only have one key field, and it must be of string or scalar type.
--   Write out tables of this type as usual, collect their offsets in an
-    array.
--   Instead of calling standard generated method,
-    e.g.: `Monster.createTestarrayoftablesVector`,
-    call `CreateSortedVectorOfMonster` in C#
-    which will first sort all offsets such that the tables they refer to
-    are sorted by the key field, then serialize it.
--   Now when you're accessing the FlatBuffer, you can use
-    the `ByKey` accessor to access elements of the vector, e.g.:
-    `monster.TestarrayoftablesByKey("Frodo")` in C#,
-    which returns an object of the corresponding table type,
-    or `null` if not found.
-    `ByKey` performs a binary search, so should have a similar
-    speed to `Dictionary`, though may be faster because of better caching.
-    `ByKey` only works if the vector has been sorted, it will
-    likely not find elements if it hasn't been sorted.
+
+- Designate one of the fields in a table as the "key" field. You do this
+  by setting the `key` attribute on this field, e.g.
+  `name:string (key)`.
+  You may only have one key field, and it must be of string or scalar type.
+- Write out tables of this type as usual, collect their offsets in an
+  array.
+- Instead of calling standard generated method,
+  e.g.: `Monster.createTestarrayoftablesVector`,
+  call `CreateSortedVectorOfMonster` in C#
+  which will first sort all offsets such that the tables they refer to
+  are sorted by the key field, then serialize it.
+- Now when you're accessing the FlatBuffer, you can use
+  the `ByKey` accessor to access elements of the vector, e.g.:
+  `monster.TestarrayoftablesByKey("Frodo")` in C#,
+  which returns an object of the corresponding table type,
+  or `null` if not found.
+  `ByKey` performs a binary search, so should have a similar
+  speed to `Dictionary`, though may be faster because of better caching.
+  `ByKey` only works if the vector has been sorted, it will
+  likely not find elements if it hasn't been sorted.
 
 ## Text parsing
 

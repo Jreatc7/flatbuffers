@@ -1,4 +1,4 @@
-Use in Rust    {#flatbuffers_guide_use_rust}
+Use in Rust {#flatbuffers_guide_use_rust}
 ==========
 
 ## Before you get started
@@ -180,7 +180,7 @@ within the same thread, let alone to a second thread.
 ## Useful tools created by others
 
 * [flatc-rust](https://github.com/frol/flatc-rust) - FlatBuffers compiler
-(flatc) as API for transparent `.fbs` to `.rs` code-generation via Cargo
-build scripts integration.
+  (flatc) as API for transparent `.fbs` to `.rs` code-generation via Cargo
+  build scripts integration.
 
 <br>

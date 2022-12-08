@@ -1,4 +1,4 @@
-Use in Kotlin    {#flatbuffers_guide_use_kotlin}
+Use in Kotlin {#flatbuffers_guide_use_kotlin}
 ==============
 
 ## Before you get started
@@ -16,7 +16,9 @@ documentation to build `flatc` and should be familiar with
 
 ## Kotlin and FlatBuffers Java code location
 
-Code generated for Kotlin currently uses the flatbuffers java runtime library. That means that Kotlin generated code can only have Java virtual machine as target architecture (which includes Android). Kotlin Native and Kotlin.js are currently not supported.
+Code generated for Kotlin currently uses the flatbuffers java runtime library. That means that Kotlin generated code can
+only have Java virtual machine as target architecture (which includes Android). Kotlin Native and Kotlin.js are
+currently not supported.
 
 The code for the FlatBuffers Java library can be found at
 `flatbuffers/java/com/google/flatbuffers`. You can browse the library on the
@@ -47,7 +49,7 @@ or write a FlatBuffer.
 
 For example, here is how you would read a FlatBuffer binary file in Kotlin:
 First, import the library and generated code. Then, you read a FlatBuffer binary
-file into a `ByteArray`.  You then turn the `ByteArray` into a `ByteBuffer`, which you
+file into a `ByteArray`. You then turn the `ByteArray` into a `ByteBuffer`, which you
 pass to the `getRootAsMyRootType` function:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.kt}
@@ -72,13 +74,15 @@ Now you can access the data from the `Monster monster`:
     val pos = monster.pos!!;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-
 ## Differences between Kotlin and Java code
 
-Kotlin generated code was designed to be as close as possible to the java counterpart, as for now, we only support kotlin on java virtual machine. So the differences in implementation and usage are basically the ones introduced by the Kotlin language itself. You can find more in-depth information [here](https://kotlinlang.org/docs/reference/comparison-to-java.html).
+Kotlin generated code was designed to be as close as possible to the java counterpart, as for now, we only support
+kotlin on java virtual machine. So the differences in implementation and usage are basically the ones introduced by the
+Kotlin language itself. You can find more in-depth
+information [here](https://kotlinlang.org/docs/reference/comparison-to-java.html).
 
 The most obvious ones are:
 
 * Fields as accessed as Kotlin [properties](https://kotlinlang.org/docs/reference/properties.html)
-* Static methods are accessed in [companion object](https://kotlinlang.org/docs/reference/classes.html#companion-objects)
+* Static methods are accessed
+  in [companion object](https://kotlinlang.org/docs/reference/classes.html#companion-objects)

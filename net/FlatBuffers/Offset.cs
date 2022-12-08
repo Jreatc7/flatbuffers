@@ -16,33 +16,36 @@
 
 namespace Google.FlatBuffers
 {
-    /// <summary>
-    /// Offset class for typesafe assignments.
-    /// </summary>
-    public struct Offset<T> where T : struct
-    {
-        public int Value;
-        public Offset(int value)
-        {
-            Value = value;
-        }
-    }
+  /// <summary>
+  /// Offset class for typesafe assignments.
+  /// </summary>
+  public struct Offset<T> where T : struct
+  {
+    public int Value;
 
-    public struct StringOffset
+    public Offset(int value)
     {
-        public int Value;
-        public StringOffset(int value)
-        {
-            Value = value;
-        }
+      Value = value;
     }
+  }
 
-    public struct VectorOffset
+  public struct StringOffset
+  {
+    public int Value;
+
+    public StringOffset(int value)
     {
-        public int Value;
-        public VectorOffset(int value)
-        {
-            Value = value;
-        }
+      Value = value;
     }
+  }
+
+  public struct VectorOffset
+  {
+    public int Value;
+
+    public VectorOffset(int value)
+    {
+      Value = value;
+    }
+  }
 }

@@ -1,4 +1,4 @@
-Platform / Language / Feature support    {#flatbuffers_support}
+Platform / Language / Feature support {#flatbuffers_support}
 =====================================
 
 FlatBuffers is actively being worked on, which means that certain platform /
@@ -7,14 +7,14 @@ language / feature combinations may not be available yet.
 This page tries to track those issues, to make informed decisions easier.
 In general:
 
-  * Languages: language support beyond the ones created by the original
-    FlatBuffer authors typically depends on community contributions.
-  * Features: C++ was the first language supported, since our original
-    target was high performance game development. It thus has the richest
-    feature set, and is likely most robust. Other languages are catching up
-    however.
-  * Platforms: All language implementations are typically portable to most
-    platforms, unless where noted otherwise.
+* Languages: language support beyond the ones created by the original
+  FlatBuffer authors typically depends on community contributions.
+* Features: C++ was the first language supported, since our original
+  target was high performance game development. It thus has the richest
+  feature set, and is likely most robust. Other languages are catching up
+  however.
+* Platforms: All language implementations are typically portable to most
+  platforms, unless where noted otherwise.
 
 NOTE: this table is a start, it needs to be extended.
 

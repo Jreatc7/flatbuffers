@@ -23,9 +23,11 @@ GitHub page](https://github.com/google/flatbuffers/tree/master/swift).
 ## Testing the FlatBuffers Swift library
 
 The code to test the Swift library can be found at `flatbuffers/tests/swift/tests`.
-The test code itself is located in [flatbuffers/tests/swift/tests](https://github.com/google/flatbuffers/blob/master/tests/swift/tests).
+The test code itself is located
+in [flatbuffers/tests/swift/tests](https://github.com/google/flatbuffers/blob/master/tests/swift/tests).
 
-To run the tests, use the [SwiftTest.sh](https://github.com/google/flatbuffers/blob/master/tests/swift/tests/SwiftTest.sh) shell script.
+To run the tests, use
+the [SwiftTest.sh](https://github.com/google/flatbuffers/blob/master/tests/swift/tests/SwiftTest.sh) shell script.
 
 *Note: The shell script requires [Swift](https://swift.org) to
 be installed.*
@@ -68,8 +70,8 @@ Now you can access values like this:
     let pos = monster.mutablePos // uses flatbuffers structs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-In some cases it's necessary to modify values in an existing FlatBuffer in place (without creating a copy). For this reason, scalar fields of a Flatbuffer table or struct can be mutated.
+In some cases it's necessary to modify values in an existing FlatBuffer in place (without creating a copy). For this
+reason, scalar fields of a Flatbuffer table or struct can be mutated.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.swift}
     let monster = Monster.getRootAsMonster(bb: ByteBuffer(data: data))
@@ -89,6 +91,7 @@ In some cases it's necessary to modify values in an existing FlatBuffer in place
     }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The term `mutate` is used instead of `set` to indicate that this is a special use case. All mutate functions return a boolean value which is false if the field we're trying to mutate is not available in the buffer.
+The term `mutate` is used instead of `set` to indicate that this is a special use case. All mutate functions return a
+boolean value which is false if the field we're trying to mutate is not available in the buffer.
 
 <br>

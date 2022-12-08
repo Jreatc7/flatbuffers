@@ -14,8 +14,10 @@ the GRPC libraries for this to compile. This test will build using the
 ### Linux
 
 1. Download, build and install gRPC. See [instructions](https://github.com/grpc/grpc/tree/master/src/cpp).
-    * Lets say your gRPC clone is at `/your/path/to/grpc_repo`.
-    * Install gRPC in a custom directory by running `make install prefix=/your/path/to/grpc_repo/install`.
+
+* Lets say your gRPC clone is at `/your/path/to/grpc_repo`.
+* Install gRPC in a custom directory by running `make install prefix=/your/path/to/grpc_repo/install`.
+
 2. `export GRPC_INSTALL_PATH=/your/path/to/grpc_repo/install`
 3. `export PROTOBUF_DOWNLOAD_PATH=/your/path/to/grpc_repo/third_party/protobuf`
 4. `mkdir build ; cd build`

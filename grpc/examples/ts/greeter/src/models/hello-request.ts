@@ -3,56 +3,56 @@
 import * as flatbuffers from 'flatbuffers';
 
 
-
 export class HelloRequest {
-  bb: flatbuffers.ByteBuffer|null = null;
+  bb: flatbuffers.ByteBuffer | null = null;
   bb_pos = 0;
-  __init(i:number, bb:flatbuffers.ByteBuffer):HelloRequest {
-  this.bb_pos = i;
-  this.bb = bb;
-  return this;
-}
 
-static getRootAsHelloRequest(bb:flatbuffers.ByteBuffer, obj?:HelloRequest):HelloRequest {
-  return (obj || new HelloRequest()).__init(bb.readInt32(bb.position()) + bb.position(), bb);
-}
+  __init(i: number, bb: flatbuffers.ByteBuffer): HelloRequest {
+    this.bb_pos = i;
+    this.bb = bb;
+    return this;
+  }
 
-static getSizePrefixedRootAsHelloRequest(bb:flatbuffers.ByteBuffer, obj?:HelloRequest):HelloRequest {
-  bb.setPosition(bb.position() + flatbuffers.SIZE_PREFIX_LENGTH);
-  return (obj || new HelloRequest()).__init(bb.readInt32(bb.position()) + bb.position(), bb);
-}
+  static getRootAsHelloRequest(bb: flatbuffers.ByteBuffer, obj?: HelloRequest): HelloRequest {
+    return (obj || new HelloRequest()).__init(bb.readInt32(bb.position()) + bb.position(), bb);
+  }
 
-name():string|null
-name(optionalEncoding:flatbuffers.Encoding):string|Uint8Array|null
-name(optionalEncoding?:any):string|Uint8Array|null {
-  const offset = this.bb!.__offset(this.bb_pos, 4);
-  return offset ? this.bb!.__string(this.bb_pos + offset, optionalEncoding) : null;
-}
+  static getSizePrefixedRootAsHelloRequest(bb: flatbuffers.ByteBuffer, obj?: HelloRequest): HelloRequest {
+    bb.setPosition(bb.position() + flatbuffers.SIZE_PREFIX_LENGTH);
+    return (obj || new HelloRequest()).__init(bb.readInt32(bb.position()) + bb.position(), bb);
+  }
 
-static startHelloRequest(builder:flatbuffers.Builder) {
-  builder.startObject(1);
-}
+  name(): string | null
+  name(optionalEncoding: flatbuffers.Encoding): string | Uint8Array | null
+  name(optionalEncoding?: any): string | Uint8Array | null {
+    const offset = this.bb!.__offset(this.bb_pos, 4);
+    return offset ? this.bb!.__string(this.bb_pos + offset, optionalEncoding) : null;
+  }
 
-static addName(builder:flatbuffers.Builder, nameOffset:flatbuffers.Offset) {
-  builder.addFieldOffset(0, nameOffset, 0);
-}
+  static startHelloRequest(builder: flatbuffers.Builder) {
+    builder.startObject(1);
+  }
 
-static endHelloRequest(builder:flatbuffers.Builder):flatbuffers.Offset {
-  const offset = builder.endObject();
-  return offset;
-}
+  static addName(builder: flatbuffers.Builder, nameOffset: flatbuffers.Offset) {
+    builder.addFieldOffset(0, nameOffset, 0);
+  }
 
-static createHelloRequest(builder:flatbuffers.Builder, nameOffset:flatbuffers.Offset):flatbuffers.Offset {
-  HelloRequest.startHelloRequest(builder);
-  HelloRequest.addName(builder, nameOffset);
-  return HelloRequest.endHelloRequest(builder);
-}
+  static endHelloRequest(builder: flatbuffers.Builder): flatbuffers.Offset {
+    const offset = builder.endObject();
+    return offset;
+  }
 
-serialize():Uint8Array {
-  return this.bb!.bytes();
-}
+  static createHelloRequest(builder: flatbuffers.Builder, nameOffset: flatbuffers.Offset): flatbuffers.Offset {
+    HelloRequest.startHelloRequest(builder);
+    HelloRequest.addName(builder, nameOffset);
+    return HelloRequest.endHelloRequest(builder);
+  }
 
-static deserialize(buffer: Uint8Array):HelloRequest {
-  return HelloRequest.getRootAsHelloRequest(new flatbuffers.ByteBuffer(buffer))
-}
+  serialize(): Uint8Array {
+    return this.bb!.bytes();
+  }
+
+  static deserialize(buffer: Uint8Array): HelloRequest {
+    return HelloRequest.getRootAsHelloRequest(new flatbuffers.ByteBuffer(buffer))
+  }
 }

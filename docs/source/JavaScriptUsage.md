@@ -1,4 +1,4 @@
-Use in JavaScript    {#flatbuffers_guide_use_javascript}
+Use in JavaScript {#flatbuffers_guide_use_javascript}
 =================
 
 ## Before you get started
@@ -16,12 +16,12 @@ documentation to build `flatc` and should be familiar with
 
 ## FlatBuffers JavaScript library code location
 
-The generated code for the FlatBuffers JavaScript library can be found at 
+The generated code for the FlatBuffers JavaScript library can be found at
 https://www.npmjs.com/package/flatbuffers. To use it from sources:
 
 1. Run `npm run compile` from the main folder to generate JS files from TS.
 1. In your project, install it as a normal dependency, using the flatbuffers
-folder as the source.
+   folder as the source.
 
 ## Using the FlatBuffers JavaScript library
 
@@ -36,7 +36,7 @@ transpile your sources to desired JS flavor. The minimal steps to get up and
 running with JS are:
 
 1. Generate TS files from `*.fbs` by using the `--ts` option.
-1. Transpile resulting TS files to desired JS flavor using `tsc` (see 
+1. Transpile resulting TS files to desired JS flavor using `tsc` (see
    https://www.typescriptlang.org/download for installation instructions).
 
 ~~~{.js}

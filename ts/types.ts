@@ -1,5 +1,5 @@
-import { ByteBuffer } from './byte-buffer.js'
-import { Builder } from './builder.js'
+import {ByteBuffer} from './byte-buffer.js'
+import {Builder} from './builder.js'
 
 export type Offset = number;
 
@@ -9,7 +9,7 @@ export type Table = {
 };
 
 export interface IGeneratedObject {
-  pack(builder:Builder): Offset
+  pack(builder: Builder): Offset
 }
 
 export interface IUnpackableObject<T> {

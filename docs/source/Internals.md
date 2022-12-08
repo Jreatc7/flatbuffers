@@ -1,4 +1,4 @@
-FlatBuffer Internals    {#flatbuffers_internals}
+FlatBuffer Internals {#flatbuffers_internals}
 ====================
 
 This section is entirely optional for the use of FlatBuffers. In normal
@@ -17,6 +17,7 @@ byte-swap intrinsics.
 
 It is assumed that the following conditions are met, to ensure
 cross-platform interoperability:
+
 - The binary `IEEE-754` format is used for floating-point numbers.
 - The `two's complemented` representation is used for signed integers.
 - The endianness is the same for floating-point numbers as for integers.
@@ -463,6 +464,5 @@ number of bytes specified by the last byte).
 So for example, the integer value `13` as root would be:
 
     uint8_t 13, 4, 1    // Value, type, root byte width.
-
 
 <br>

@@ -3,12 +3,12 @@ import assert from 'assert'
 import fs from 'fs'
 import * as flatbuffers from 'flatbuffers'
 
-import { Monster, MonsterT } from './my-game/example/monster.js'
-import { Test, TestT } from './my-game/example/test.js'
-import { Stat } from './my-game/example/stat.js'
-import { Vec3 } from './my-game/example/vec3.js'
-import { Color } from './my-game/example/color.js';
-import { Any } from './my-game/example/any.js';
+import {Monster, MonsterT} from './my-game/example/monster.js'
+import {Test, TestT} from './my-game/example/test.js'
+import {Stat} from './my-game/example/stat.js'
+import {Vec3} from './my-game/example/vec3.js'
+import {Color} from './my-game/example/color.js';
+import {Any} from './my-game/example/any.js';
 
 function main() {
 
@@ -294,23 +294,24 @@ function testUnicode() {
     assert.strictEqual(monster.name(), json.name);
     assert.deepEqual(Buffer.from(monster.name(flatbuffers.Encoding.UTF8_BYTES)), Buffer.from(json.name));
     assert.strictEqual(monster.testarrayoftablesLength(), json.testarrayoftables.length);
-    json.testarrayoftables.forEach(function(table, i) {
+    json.testarrayoftables.forEach(function (table, i) {
       var value = monster.testarrayoftables(i);
       assert.strictEqual(value.name(), table.name);
       assert.deepEqual(Buffer.from(value.name(flatbuffers.Encoding.UTF8_BYTES)), Buffer.from(table.name));
     });
     assert.strictEqual(monster.testarrayofstringLength(), json.testarrayofstring.length);
-    json.testarrayofstring.forEach(function(string, i) {
+    json.testarrayofstring.forEach(function (string, i) {
       assert.strictEqual(monster.testarrayofstring(i), string);
       assert.deepEqual(Buffer.from(monster.testarrayofstring(i, flatbuffers.Encoding.UTF8_BYTES)), Buffer.from(string));
     });
   }
+
   testReadingUnicode(new flatbuffers.ByteBuffer(new Uint8Array(correct)));
 
   // Test writing
   var fbb = new flatbuffers.Builder();
   var name = fbb.createString(json.name);
-  var testarrayoftablesOffsets = json.testarrayoftables.map(function(table) {
+  var testarrayoftablesOffsets = json.testarrayoftables.map(function (table) {
     var name = fbb.createString(new Uint8Array(Buffer.from(table.name)));
     Monster.startMonster(fbb);
     Monster.addName(fbb, name);
@@ -319,7 +320,9 @@ function testUnicode() {
   var testarrayoftablesOffset = Monster.createTestarrayoftablesVector(fbb,
     testarrayoftablesOffsets);
   var testarrayofstringOffset = Monster.createTestarrayofstringVector(fbb,
-    json.testarrayofstring.map(function(string) { return fbb.createString(string); }));
+    json.testarrayofstring.map(function (string) {
+      return fbb.createString(string);
+    }));
   Monster.startMonster(fbb);
   Monster.addTestarrayofstring(fbb, testarrayofstringOffset);
   Monster.addTestarrayoftables(fbb, testarrayoftablesOffset);
@@ -330,7 +333,7 @@ function testUnicode() {
   testReadingUnicode(bb);
 }
 
-var __imul = Math.imul ? Math.imul : function(a, b) {
+var __imul = Math.imul ? Math.imul : function (a, b) {
   var ah = a >> 16 & 65535;
   var bh = b >> 16 & 65535;
   var al = a & 65535;
@@ -364,16 +367,16 @@ function fuzzTest1() {
 
   // Values we're testing against: chosen to ensure no bits get chopped
   // off anywhere, and also be different from eachother.
-  var bool_val   = true;
-  var char_val   = -127;  // 0x81
-  var uchar_val  = 0xFF;
-  var short_val  = -32222; // 0x8222;
+  var bool_val = true;
+  var char_val = -127;  // 0x81
+  var uchar_val = 0xFF;
+  var short_val = -32222; // 0x8222;
   var ushort_val = 0xFEEE;
-  var int_val    = 0x83333333 | 0;
-  var uint_val   = 0xFDDDDDDD;
-  var long_val   = BigInt.asIntN(64, 0x8444444444444444n);
-  var ulong_val  = BigInt.asUintN(64, 0xFCCCCCCCCCCCCCCCn);
-  var float_val  = new Float32Array([3.14159])[0];
+  var int_val = 0x83333333 | 0;
+  var uint_val = 0xFDDDDDDD;
+  var long_val = BigInt.asIntN(64, 0x8444444444444444n);
+  var ulong_val = BigInt.asUintN(64, 0xFCCCCCCCCCCCCCCCn);
+  var float_val = new Float32Array([3.14159])[0];
   var double_val = 3.14159265359;
 
   var test_values_max = 11;
@@ -393,17 +396,39 @@ function fuzzTest1() {
     for (var f = 0; f < fields_per_object; f++) {
       var choice = lcg_rand() % test_values_max;
       switch (choice) {
-        case 0:  builder.addFieldInt8(f, bool_val, 0); break;
-        case 1:  builder.addFieldInt8(f, char_val, 0); break;
-        case 2:  builder.addFieldInt8(f, uchar_val, 0); break;
-        case 3:  builder.addFieldInt16(f, short_val, 0); break;
-        case 4:  builder.addFieldInt16(f, ushort_val, 0); break;
-        case 5:  builder.addFieldInt32(f, int_val, 0); break;
-        case 6:  builder.addFieldInt32(f, uint_val, 0); break;
-        case 7:  builder.addFieldInt64(f, long_val, 0n); break;
-        case 8:  builder.addFieldInt64(f, ulong_val, 0n); break;
-        case 9:  builder.addFieldFloat32(f, float_val, 0); break;
-        case 10: builder.addFieldFloat64(f, double_val, 0); break;
+        case 0:
+          builder.addFieldInt8(f, bool_val, 0);
+          break;
+        case 1:
+          builder.addFieldInt8(f, char_val, 0);
+          break;
+        case 2:
+          builder.addFieldInt8(f, uchar_val, 0);
+          break;
+        case 3:
+          builder.addFieldInt16(f, short_val, 0);
+          break;
+        case 4:
+          builder.addFieldInt16(f, ushort_val, 0);
+          break;
+        case 5:
+          builder.addFieldInt32(f, int_val, 0);
+          break;
+        case 6:
+          builder.addFieldInt32(f, uint_val, 0);
+          break;
+        case 7:
+          builder.addFieldInt64(f, long_val, 0n);
+          break;
+        case 8:
+          builder.addFieldInt64(f, ulong_val, 0n);
+          break;
+        case 9:
+          builder.addFieldFloat32(f, float_val, 0);
+          break;
+        case 10:
+          builder.addFieldFloat64(f, double_val, 0);
+          break;
       }
     }
     objects.push(builder.endObject());
@@ -428,17 +453,39 @@ function fuzzTest1() {
       assert.ok(vtable_offset < view.getInt16(vtable, true));
       var field_offset = offset + view.getInt16(vtable + vtable_offset, true);
       switch (choice) {
-        case 0:  assert.strictEqual(!!view.getInt8(field_offset), bool_val); break;
-        case 1:  assert.strictEqual(view.getInt8(field_offset), char_val); break;
-        case 2:  assert.strictEqual(view.getUint8(field_offset), uchar_val); break;
-        case 3:  assert.strictEqual(view.getInt16(field_offset, true), short_val); break;
-        case 4:  assert.strictEqual(view.getUint16(field_offset, true), ushort_val); break;
-        case 5:  assert.strictEqual(view.getInt32(field_offset, true), int_val); break;
-        case 6:  assert.strictEqual(view.getUint32(field_offset, true), uint_val); break;
-        case 7:  assert.strictEqual(view.getBigInt64(field_offset, true), long_val); break;
-        case 8:  assert.strictEqual(view.getBigUint64(field_offset, true), ulong_val); break;
-        case 9:  assert.strictEqual(view.getFloat32(field_offset, true), float_val); break;
-        case 10: assert.strictEqual(view.getFloat64(field_offset, true), double_val); break;
+        case 0:
+          assert.strictEqual(!!view.getInt8(field_offset), bool_val);
+          break;
+        case 1:
+          assert.strictEqual(view.getInt8(field_offset), char_val);
+          break;
+        case 2:
+          assert.strictEqual(view.getUint8(field_offset), uchar_val);
+          break;
+        case 3:
+          assert.strictEqual(view.getInt16(field_offset, true), short_val);
+          break;
+        case 4:
+          assert.strictEqual(view.getUint16(field_offset, true), ushort_val);
+          break;
+        case 5:
+          assert.strictEqual(view.getInt32(field_offset, true), int_val);
+          break;
+        case 6:
+          assert.strictEqual(view.getUint32(field_offset, true), uint_val);
+          break;
+        case 7:
+          assert.strictEqual(view.getBigInt64(field_offset, true), long_val);
+          break;
+        case 8:
+          assert.strictEqual(view.getBigUint64(field_offset, true), ulong_val);
+          break;
+        case 9:
+          assert.strictEqual(view.getFloat32(field_offset, true), float_val);
+          break;
+        case 10:
+          assert.strictEqual(view.getFloat64(field_offset, true), double_val);
+          break;
       }
     }
   }

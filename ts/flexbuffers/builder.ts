@@ -1,9 +1,9 @@
-import { BitWidth } from './bit-width.js'
-import { paddingSize, iwidth, uwidth, fwidth, toByteWidth, fromByteWidth } from './bit-width-util.js'
-import { toUTF8Array } from './flexbuffers-util.js'
-import { ValueType } from './value-type.js'
-import { isNumber, isTypedVectorElement, toTypedVector } from './value-type-util.js'
-import { StackValue } from './stack-value.js'
+import {BitWidth} from './bit-width.js'
+import {paddingSize, iwidth, uwidth, fwidth, toByteWidth, fromByteWidth} from './bit-width-util.js'
+import {toUTF8Array} from './flexbuffers-util.js'
+import {ValueType} from './value-type.js'
+import {isNumber, isTypedVectorElement, toTypedVector} from './value-type-util.js'
+import {StackValue} from './stack-value.js'
 
 interface StackPointer {
   stackPosition: number,
@@ -179,11 +179,11 @@ export class Builder {
   }
 
   startVector(): void {
-    this.stackPointers.push({ stackPosition: this.stack.length, isVector: true });
+    this.stackPointers.push({stackPosition: this.stack.length, isVector: true});
   }
 
   startMap(presorted = false): void {
-    this.stackPointers.push({ stackPosition: this.stack.length, isVector: false, presorted: presorted });
+    this.stackPointers.push({stackPosition: this.stack.length, isVector: false, presorted: presorted});
   }
 
   private endVector(stackPointer: StackPointer) {

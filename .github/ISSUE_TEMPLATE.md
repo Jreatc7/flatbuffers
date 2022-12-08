@@ -1,6 +1,7 @@
 Thank you for submitting an issue!
 
-Please make sure you include the names of the affected language(s), compiler version(s), operating system version(s), and FlatBuffers version(s) in your issue title.
+Please make sure you include the names of the affected language(s), compiler version(s), operating system version(s),
+and FlatBuffers version(s) in your issue title.
 
 This helps us get the correct maintainers to look at your issue. Here are examples of good titles:
 

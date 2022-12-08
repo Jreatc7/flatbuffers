@@ -3,64 +3,66 @@
 import * as flatbuffers from 'flatbuffers';
 
 
-
 export class Monster {
-  bb: flatbuffers.ByteBuffer|null = null;
+  bb: flatbuffers.ByteBuffer | null = null;
   bb_pos = 0;
-  __init(i:number, bb:flatbuffers.ByteBuffer):Monster {
-  this.bb_pos = i;
-  this.bb = bb;
-  return this;
-}
 
-static getRootAsMonster(bb:flatbuffers.ByteBuffer, obj?:Monster):Monster {
-  return (obj || new Monster()).__init(bb.readInt32(bb.position()) + bb.position(), bb);
-}
+  __init(i: number, bb: flatbuffers.ByteBuffer): Monster {
+    this.bb_pos = i;
+    this.bb = bb;
+    return this;
+  }
 
-static getSizePrefixedRootAsMonster(bb:flatbuffers.ByteBuffer, obj?:Monster):Monster {
-  bb.setPosition(bb.position() + flatbuffers.SIZE_PREFIX_LENGTH);
-  return (obj || new Monster()).__init(bb.readInt32(bb.position()) + bb.position(), bb);
-}
+  static getRootAsMonster(bb: flatbuffers.ByteBuffer, obj?: Monster): Monster {
+    return (obj || new Monster()).__init(bb.readInt32(bb.position()) + bb.position(), bb);
+  }
 
-static getFullyQualifiedName():string {
-  return 'MyGame_Example2_Monster';
-}
+  static getSizePrefixedRootAsMonster(bb: flatbuffers.ByteBuffer, obj?: Monster): Monster {
+    bb.setPosition(bb.position() + flatbuffers.SIZE_PREFIX_LENGTH);
+    return (obj || new Monster()).__init(bb.readInt32(bb.position()) + bb.position(), bb);
+  }
 
-static startMonster(builder:flatbuffers.Builder) {
-  builder.startObject(0);
-}
+  static getFullyQualifiedName(): string {
+    return 'MyGame_Example2_Monster';
+  }
 
-static endMonster(builder:flatbuffers.Builder):flatbuffers.Offset {
-  const offset = builder.endObject();
-  return offset;
-}
+  static startMonster(builder: flatbuffers.Builder) {
+    builder.startObject(0);
+  }
 
-static createMonster(builder:flatbuffers.Builder):flatbuffers.Offset {
-  Monster.startMonster(builder);
-  return Monster.endMonster(builder);
-}
+  static endMonster(builder: flatbuffers.Builder): flatbuffers.Offset {
+    const offset = builder.endObject();
+    return offset;
+  }
 
-serialize():Uint8Array {
-  return this.bb!.bytes();
-}
+  static createMonster(builder: flatbuffers.Builder): flatbuffers.Offset {
+    Monster.startMonster(builder);
+    return Monster.endMonster(builder);
+  }
 
-static deserialize(buffer: Uint8Array):Monster {
-  return Monster.getRootAsMonster(new flatbuffers.ByteBuffer(buffer))
-}
+  serialize(): Uint8Array {
+    return this.bb!.bytes();
+  }
 
-unpack(): MonsterT {
-  return new MonsterT();
-}
+  static deserialize(buffer: Uint8Array): Monster {
+    return Monster.getRootAsMonster(new flatbuffers.ByteBuffer(buffer))
+  }
+
+  unpack(): MonsterT {
+    return new MonsterT();
+  }
 
 
-unpackTo(_o: MonsterT): void {}
+  unpackTo(_o: MonsterT): void {
+  }
 }
 
 export class MonsterT {
-constructor(){}
+  constructor() {
+  }
 
 
-pack(builder:flatbuffers.Builder): flatbuffers.Offset {
-  return Monster.createMonster(builder);
-}
+  pack(builder: flatbuffers.Builder): flatbuffers.Offset {
+    return Monster.createMonster(builder);
+  }
 }

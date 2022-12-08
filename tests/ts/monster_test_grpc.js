@@ -1,7 +1,7 @@
 // Generated GRPC code for FlatBuffers TS *** DO NOT EDIT ***
 import * as flatbuffers from 'flatbuffers';
-import { Stat as MyGame_Example_Stat } from './my-game/example/stat';
-import { Monster as MyGame_Example_Monster } from './my-game/example/monster';
+import {Stat as MyGame_Example_Stat} from './my-game/example/stat';
+import {Monster as MyGame_Example_Monster} from './my-game/example/monster';
 
 var grpc = require('@grpc/grpc-js');
 
@@ -27,8 +27,6 @@ function serialize_MyGame_Example_Monster(buffer_args) {
 function deserialize_MyGame_Example_Monster(buffer) {
   return MyGame_Example_Monster.getRootAsMonster(new flatbuffers.ByteBuffer(buffer))
 }
-
-
 
 
 var MonsterStorageService = exports.MonsterStorageService = {

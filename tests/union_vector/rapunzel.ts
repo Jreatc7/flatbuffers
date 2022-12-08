@@ -3,61 +3,62 @@
 import * as flatbuffers from 'flatbuffers';
 
 
-
 export class Rapunzel {
-  bb: flatbuffers.ByteBuffer|null = null;
+  bb: flatbuffers.ByteBuffer | null = null;
   bb_pos = 0;
-  __init(i:number, bb:flatbuffers.ByteBuffer):Rapunzel {
-  this.bb_pos = i;
-  this.bb = bb;
-  return this;
-}
 
-hairLength():number {
-  return this.bb!.readInt32(this.bb_pos);
-}
+  __init(i: number, bb: flatbuffers.ByteBuffer): Rapunzel {
+    this.bb_pos = i;
+    this.bb = bb;
+    return this;
+  }
 
-mutate_hair_length(value:number):boolean {
-  this.bb!.writeInt32(this.bb_pos + 0, value);
-  return true;
-}
+  hairLength(): number {
+    return this.bb!.readInt32(this.bb_pos);
+  }
 
-static getFullyQualifiedName():string {
-  return 'Rapunzel';
-}
+  mutate_hair_length(value: number): boolean {
+    this.bb!.writeInt32(this.bb_pos + 0, value);
+    return true;
+  }
 
-static sizeOf():number {
-  return 4;
-}
+  static getFullyQualifiedName(): string {
+    return 'Rapunzel';
+  }
 
-static createRapunzel(builder:flatbuffers.Builder, hair_length: number):flatbuffers.Offset {
-  builder.prep(4, 4);
-  builder.writeInt32(hair_length);
-  return builder.offset();
-}
+  static sizeOf(): number {
+    return 4;
+  }
 
-
-unpack(): RapunzelT {
-  return new RapunzelT(
-    this.hairLength()
-  );
-}
+  static createRapunzel(builder: flatbuffers.Builder, hair_length: number): flatbuffers.Offset {
+    builder.prep(4, 4);
+    builder.writeInt32(hair_length);
+    return builder.offset();
+  }
 
 
-unpackTo(_o: RapunzelT): void {
-  _o.hairLength = this.hairLength();
-}
+  unpack(): RapunzelT {
+    return new RapunzelT(
+      this.hairLength()
+    );
+  }
+
+
+  unpackTo(_o: RapunzelT): void {
+    _o.hairLength = this.hairLength();
+  }
 }
 
 export class RapunzelT {
-constructor(
-  public hairLength: number = 0
-){}
+  constructor(
+    public hairLength: number = 0
+  ) {
+  }
 
 
-pack(builder:flatbuffers.Builder): flatbuffers.Offset {
-  return Rapunzel.createRapunzel(builder,
-    this.hairLength
-  );
-}
+  pack(builder: flatbuffers.Builder): flatbuffers.Offset {
+    return Rapunzel.createRapunzel(builder,
+      this.hairLength
+    );
+  }
 }

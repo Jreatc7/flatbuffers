@@ -1,4 +1,4 @@
-Use in PHP    {#flatbuffers_guide_use_php}
+Use in PHP {#flatbuffers_guide_use_php}
 ==========
 
 ## Before you get started

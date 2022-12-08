@@ -3,61 +3,62 @@
 import * as flatbuffers from 'flatbuffers';
 
 
-
 export class BookReader {
-  bb: flatbuffers.ByteBuffer|null = null;
+  bb: flatbuffers.ByteBuffer | null = null;
   bb_pos = 0;
-  __init(i:number, bb:flatbuffers.ByteBuffer):BookReader {
-  this.bb_pos = i;
-  this.bb = bb;
-  return this;
-}
 
-booksRead():number {
-  return this.bb!.readInt32(this.bb_pos);
-}
+  __init(i: number, bb: flatbuffers.ByteBuffer): BookReader {
+    this.bb_pos = i;
+    this.bb = bb;
+    return this;
+  }
 
-mutate_books_read(value:number):boolean {
-  this.bb!.writeInt32(this.bb_pos + 0, value);
-  return true;
-}
+  booksRead(): number {
+    return this.bb!.readInt32(this.bb_pos);
+  }
 
-static getFullyQualifiedName():string {
-  return 'BookReader';
-}
+  mutate_books_read(value: number): boolean {
+    this.bb!.writeInt32(this.bb_pos + 0, value);
+    return true;
+  }
 
-static sizeOf():number {
-  return 4;
-}
+  static getFullyQualifiedName(): string {
+    return 'BookReader';
+  }
 
-static createBookReader(builder:flatbuffers.Builder, books_read: number):flatbuffers.Offset {
-  builder.prep(4, 4);
-  builder.writeInt32(books_read);
-  return builder.offset();
-}
+  static sizeOf(): number {
+    return 4;
+  }
 
-
-unpack(): BookReaderT {
-  return new BookReaderT(
-    this.booksRead()
-  );
-}
+  static createBookReader(builder: flatbuffers.Builder, books_read: number): flatbuffers.Offset {
+    builder.prep(4, 4);
+    builder.writeInt32(books_read);
+    return builder.offset();
+  }
 
 
-unpackTo(_o: BookReaderT): void {
-  _o.booksRead = this.booksRead();
-}
+  unpack(): BookReaderT {
+    return new BookReaderT(
+      this.booksRead()
+    );
+  }
+
+
+  unpackTo(_o: BookReaderT): void {
+    _o.booksRead = this.booksRead();
+  }
 }
 
 export class BookReaderT {
-constructor(
-  public booksRead: number = 0
-){}
+  constructor(
+    public booksRead: number = 0
+  ) {
+  }
 
 
-pack(builder:flatbuffers.Builder): flatbuffers.Offset {
-  return BookReader.createBookReader(builder,
-    this.booksRead
-  );
-}
+  pack(builder: flatbuffers.Builder): flatbuffers.Offset {
+    return BookReader.createBookReader(builder,
+      this.booksRead
+    );
+  }
 }

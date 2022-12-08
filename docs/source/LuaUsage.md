@@ -1,4 +1,4 @@
-Use in Lua    {#flatbuffers_guide_use_lua}
+Use in Lua {#flatbuffers_guide_use_lua}
 =============
 
 ## Before you get started
@@ -70,7 +70,6 @@ Now you can access values like this:
     local hp = monster1:Hp()
     local pos = monster1:Pos()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 ## Text Parsing
 

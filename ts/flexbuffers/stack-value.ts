@@ -1,8 +1,8 @@
-import { Builder } from './builder.js'
-import { BitWidth } from './bit-width.js'
-import { paddingSize, uwidth, fromByteWidth } from './bit-width-util.js'
-import { ValueType } from './value-type.js'
-import { isInline, packedType } from './value-type-util.js'
+import {Builder} from './builder.js'
+import {BitWidth} from './bit-width.js'
+import {paddingSize, uwidth, fromByteWidth} from './bit-width-util.js'
+import {ValueType} from './value-type.js'
+import {isInline, packedType} from './value-type-util.js'
 
 export class StackValue {
   constructor(private builder: Builder, public type: ValueType, public width: number, public value: number | boolean | null = null, public offset: number = 0) {

@@ -1,4 +1,4 @@
-Use in C    {#flatbuffers_guide_use_c}
+Use in C {#flatbuffers_guide_use_c}
 ==========
 
 The C language binding exists in a separate project named [FlatCC](https://github.com/dvidelabs/flatcc).
@@ -19,7 +19,6 @@ project.
 - [The Monster Sample in C](https://github.com/dvidelabs/flatcc/blob/master/samples/monster/monster.c)
 - [GitHub](https://github.com/dvidelabs/flatcc)
 
-
 ## Supported Platforms
 
 - Ubuntu (clang / gcc, ninja / gnu make)
@@ -27,13 +26,15 @@ project.
 - Windows MSVC 2010, 2013, 2015
 
 CI builds recent versions of gcc, clang and MSVC on OS-X, Ubuntu, and
-Windows, and occasionally older compiler versions. See main project [Status](https://github.com/dvidelabs/flatcc#status).
+Windows, and occasionally older compiler versions. See main project [Status](https://github.com/dvidelabs/flatcc#status)
+.
 
 Other platforms may well work, including Centos, but are not tested
 regularly.
 
 The monster sample project was specifically written for C99 in order to
 follow the C++ version and for that reason it will not work with MSVC
+
 2010.
 
 ## Modular Object Creation
@@ -53,11 +54,11 @@ calls isolated at the top driver level, so we get:
     return s(Monster_create(B, ...));
   }
 
-  void create_monster_buffer()
-  {
-      uint8_t *buf;
-      size_t size;
-      flatcc_builder_t builder, *B;
+void create_monster_buffer()
+{
+uint8_t *buf;
+size_t size;
+flatcc_builder_t builder, *B;
 
       // Initialize the builder object.
       B = &builder;
@@ -70,7 +71,9 @@ calls isolated at the top driver level, so we get:
 
       free(buf);
       flatcc_builder_clear(B);
-  }
+
+}
+
 ~~~
 </div>
 
@@ -130,8 +133,8 @@ limited, but it shows the idea:
 
   ns(Monster_end_as_root(B));
 ~~~
-</div>
 
+</div>
 
 ## Basic Reflection
 
@@ -140,7 +143,6 @@ files via code generated from the `reflection.fbs` schema, and an
 [example usage](https://github.com/dvidelabs/flatcc/tree/master/samples/reflection)
 shows how to use this. The reflection schema files are pre-generated
 in the [runtime distribution](https://github.com/dvidelabs/flatcc/tree/master/include/flatcc/reflection).
-
 
 ## Mutations and Reflection
 
@@ -165,7 +167,6 @@ It is currently not possible to use an existing table or vector of table
 as source, but it would be possible to add support for this at some
 point.
 
-
 ## Namespaces
 
 The `FLATBUFFERS_WRAP_NAMESPACE` approach used in the tutorial is convenient
@@ -174,7 +175,6 @@ the best approach. If the namespace is absent, or simple and
 informative, we might as well use the prefix directly. The
 [reflection example](https://github.com/dvidelabs/flatcc/blob/master/samples/reflection/bfbs2json.c)
 mentioned above uses this approach.
-
 
 ## Checking for Present Members
 
@@ -192,7 +192,7 @@ be present.
 
 ## Alternative ways to add a Union
 
-In the tutorial we used a single call to add a union.  Here we show
+In the tutorial we used a single call to add a union. Here we show
 different ways to accomplish the same thing. The last form is rarely
 used, but is the low-level way to do it. It can be used to group small
 values together in the table by adding type and data at different

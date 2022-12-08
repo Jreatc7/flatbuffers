@@ -3,75 +3,76 @@
 import * as flatbuffers from 'flatbuffers';
 
 
-
 export class StructInNestedNS {
-  bb: flatbuffers.ByteBuffer|null = null;
+  bb: flatbuffers.ByteBuffer | null = null;
   bb_pos = 0;
-__init(i:number, bb:flatbuffers.ByteBuffer):StructInNestedNS {
-  this.bb_pos = i;
-  this.bb = bb;
-  return this;
-}
 
-a():number {
-  return this.bb!.readInt32(this.bb_pos);
-}
+  __init(i: number, bb: flatbuffers.ByteBuffer): StructInNestedNS {
+    this.bb_pos = i;
+    this.bb = bb;
+    return this;
+  }
 
-mutate_a(value:number):boolean {
-  this.bb!.writeInt32(this.bb_pos + 0, value);
-  return true;
-}
+  a(): number {
+    return this.bb!.readInt32(this.bb_pos);
+  }
 
-b():number {
-  return this.bb!.readInt32(this.bb_pos + 4);
-}
+  mutate_a(value: number): boolean {
+    this.bb!.writeInt32(this.bb_pos + 0, value);
+    return true;
+  }
 
-mutate_b(value:number):boolean {
-  this.bb!.writeInt32(this.bb_pos + 4, value);
-  return true;
-}
+  b(): number {
+    return this.bb!.readInt32(this.bb_pos + 4);
+  }
 
-static getFullyQualifiedName():string {
-  return 'NamespaceA.NamespaceB.StructInNestedNS';
-}
+  mutate_b(value: number): boolean {
+    this.bb!.writeInt32(this.bb_pos + 4, value);
+    return true;
+  }
 
-static sizeOf():number {
-  return 8;
-}
+  static getFullyQualifiedName(): string {
+    return 'NamespaceA.NamespaceB.StructInNestedNS';
+  }
 
-static createStructInNestedNS(builder:flatbuffers.Builder, a: number, b: number):flatbuffers.Offset {
-  builder.prep(4, 8);
-  builder.writeInt32(b);
-  builder.writeInt32(a);
-  return builder.offset();
-}
+  static sizeOf(): number {
+    return 8;
+  }
 
-
-unpack(): StructInNestedNST {
-  return new StructInNestedNST(
-    this.a(),
-    this.b()
-  );
-}
+  static createStructInNestedNS(builder: flatbuffers.Builder, a: number, b: number): flatbuffers.Offset {
+    builder.prep(4, 8);
+    builder.writeInt32(b);
+    builder.writeInt32(a);
+    return builder.offset();
+  }
 
 
-unpackTo(_o: StructInNestedNST): void {
-  _o.a = this.a();
-  _o.b = this.b();
-}
+  unpack(): StructInNestedNST {
+    return new StructInNestedNST(
+      this.a(),
+      this.b()
+    );
+  }
+
+
+  unpackTo(_o: StructInNestedNST): void {
+    _o.a = this.a();
+    _o.b = this.b();
+  }
 }
 
 export class StructInNestedNST {
-constructor(
-  public a: number = 0,
-  public b: number = 0
-){}
+  constructor(
+    public a: number = 0,
+    public b: number = 0
+  ) {
+  }
 
 
-pack(builder:flatbuffers.Builder): flatbuffers.Offset {
-  return StructInNestedNS.createStructInNestedNS(builder,
-    this.a,
-    this.b
-  );
-}
+  pack(builder: flatbuffers.Builder): flatbuffers.Offset {
+    return StructInNestedNS.createStructInNestedNS(builder,
+      this.a,
+      this.b
+    );
+  }
 }

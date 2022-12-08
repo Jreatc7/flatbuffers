@@ -17,59 +17,59 @@
     <tab type="mainpage" visible="no" title=""/>
     <tab type="usergroup" url="" title="Programmer's Guide">
       <tab type="user" url="@ref flatbuffers_guide_building"
-          title="Building"/>
+           title="Building"/>
       <tab type="user" url="@ref flatbuffers_guide_tutorial" title="Tutorial"/>
       <tab type="user" url="@ref flatbuffers_guide_using_schema_compiler"
-          title="Using the schema compiler"/>
+           title="Using the schema compiler"/>
       <tab type="user" url="@ref flatbuffers_guide_writing_schema"
-          title="Writing a schema"/>
+           title="Writing a schema"/>
       <tab type="user" url="@ref flatbuffers_guide_use_cpp"
-          title="Use in C++"/>
+           title="Use in C++"/>
       <tab type="user" url="@ref flatbuffers_guide_use_c"
-          title="Use in C"/>
+           title="Use in C"/>
       <tab type="user" url="@ref flatbuffers_guide_use_go"
-          title="Use in Go"/>
+           title="Use in Go"/>
       <tab type="user" url="@ref flatbuffers_guide_use_java"
-          title="Use in Java"/>
+           title="Use in Java"/>
       <tab type="user" url="@ref flatbuffers_guide_use_c-sharp"
-          title="Use in C#"/>
+           title="Use in C#"/>
       <tab type="user" url="@ref flatbuffers_guide_use_javascript"
-          title="Use in JavaScript"/>
+           title="Use in JavaScript"/>
       <tab type="user" url="@ref flatbuffers_guide_use_typescript"
-          title="Use in TypeScript"/>
+           title="Use in TypeScript"/>
       <tab type="user" url="@ref flatbuffers_guide_use_php"
-          title="Use in PHP"/>
+           title="Use in PHP"/>
       <tab type="user" url="@ref flatbuffers_guide_use_python"
-          title="Use in Python"/>
+           title="Use in Python"/>
       <tab type="user" url="@ref flatbuffers_guide_use_dart"
-          title="Use in Dart"/>
+           title="Use in Dart"/>
       <tab type="user" url="@ref flatbuffers_guide_use_lua"
-          title="Use in Lua"/>
+           title="Use in Lua"/>
       <tab type="user" url="@ref flatbuffers_guide_use_lobster"
-          title="Use in Lobster"/>
+           title="Use in Lobster"/>
       <tab type="user" url="@ref flatbuffers_guide_use_rust"
-          title="Use in Rust"/>
+           title="Use in Rust"/>
       <tab type="user" url="@ref flatbuffers_guide_use_swift"
-          title="Use in Swift"/>
+           title="Use in Swift"/>
       <tab type="user" url="@ref flexbuffers"
-          title="FlexBuffers (Schema-less version)"/>
+           title="FlexBuffers (Schema-less version)"/>
       <tab type="usergroup" url="" title="gRPC">
         <tab type="user" url="@ref flatbuffers_grpc_guide_use_cpp"
-            title="Use in C++"/>
+             title="Use in C++"/>
       </tab>
     </tab>
     <tab type="user" url="@ref flatbuffers_support"
-        title="Platform / Language / Feature support"/>
+         title="Platform / Language / Feature support"/>
     <tab type="user" url="@ref flatbuffers_benchmarks"
-        title="Benchmarks"/>
+         title="Benchmarks"/>
     <tab type="user" url="@ref flatbuffers_white_paper"
-        title="FlatBuffers white paper"/>
+         title="FlatBuffers white paper"/>
     <tab type="user" url="@ref flatbuffers_internals"
-        title="FlatBuffers internals"/>
+         title="FlatBuffers internals"/>
     <tab type="user" url="@ref intermediate_representation"
-        title="Intermediate Representation"/>
+         title="Intermediate Representation"/>
     <tab type="user" url="@ref flatbuffers_grammar"
-        title="Grammar of the schema language"/>
+         title="Grammar of the schema language"/>
     <tab type="usergroup" url="" title="API Reference">
       <tab type="modules" visible="yes" title="APIs" intro=""/>
       <tab type="classes" visible="yes" title="">

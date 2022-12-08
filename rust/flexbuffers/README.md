@@ -14,6 +14,7 @@ FlexBuffers supports [Serde](https://serde.rs/) for automatically serializing
 Rust data structures into its binary format.
 
 ## See Examples for Usage:
+
 * [Example](https://github.com/google/flatbuffers/blob/master/samples/sample_flexbuffers.rs)
 * [Serde Example](https://github.com/google/flatbuffers/blob/master/samples/sample_flexbuffers_serde.rs)
 * [Documentation](https://docs.rs/flexbuffers)

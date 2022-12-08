@@ -1,4 +1,4 @@
-Use in Dart    {#flatbuffers_guide_use_dart}
+Use in Dart {#flatbuffers_guide_use_dart}
 ===========
 
 ## Before you get started
@@ -70,30 +70,30 @@ The work in this repository is signfiicantly based on the implementation used
 internally by the Dart SDK in the front end/analyzer package. Several
 significant changes have been made.
 
-1. Support for packed boolean lists has been removed.  This is not standard
-   in other implementations and is not compatible with them.  Do note that,
+1. Support for packed boolean lists has been removed. This is not standard
+   in other implementations and is not compatible with them. Do note that,
    like in the JavaScript implementation, __null values in boolean lists
-   will be treated as false__.  It is also still entirely possible to pack data
+   will be treated as false__. It is also still entirely possible to pack data
    in a single scalar field, but that would have to be done on the application
    side.
 2. The SDK implementation supports enums with regular Dart enums, which
    works if enums are always indexed at 1; however, FlatBuffers does not
-   require that.  This implementation uses specialized enum-like classes to
+   require that. This implementation uses specialized enum-like classes to
    ensure proper mapping from FlatBuffers to Dart and other platforms.
 3. The SDK implementation does not appear to support FlatBuffer structs or
    vectors of structs - it treated everything as a built-in scalar or a table.
    This implementation treats structs in a way that is compatible with other
-   non-Dart implementations, and properly handles vectors of structs.  Many of
+   non-Dart implementations, and properly handles vectors of structs. Many of
    the methods prefixed with 'low' have been prepurposed to support this.
 4. The SDK implementation treats int64 and uint64 as float64s. This
-   implementation does not.  This may cause problems with JavaScript
+   implementation does not. This may cause problems with JavaScript
    compatibility - however, it should be possible to use the JavaScript
    implementation, or to do a customized implementation that treats all 64 bit
-   numbers as floats.  Supporting the Dart VM and Flutter was a more important
-   goal of this implementation.  Support for 16 bit integers was also added.
+   numbers as floats. Supporting the Dart VM and Flutter was a more important
+   goal of this implementation. Support for 16 bit integers was also added.
 5. The code generation in this offers an "ObjectBuilder", which generates code
    very similar to the SDK classes that consume FlatBuffers, as well as Builder
-   classes, which produces code which more closely resembles the builders in 
+   classes, which produces code which more closely resembles the builders in
    other languages. The ObjectBuilder classes are easier to use, at the cost of
    additional references allocated.
 

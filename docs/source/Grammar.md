@@ -1,10 +1,10 @@
-Grammar of the schema language    {#flatbuffers_grammar}
+Grammar of the schema language {#flatbuffers_grammar}
 ==============================
 
 schema = include*
-         ( namespace\_decl | type\_decl | enum\_decl | root\_decl |
-           file_extension_decl | file_identifier_decl |
-           attribute\_decl | rpc\_decl | object )*
+( namespace\_decl | type\_decl | enum\_decl | root\_decl |
+file_extension_decl | file_identifier_decl |
+attribute\_decl | rpc\_decl | object )*
 
 include = `include` string\_constant `;`
 

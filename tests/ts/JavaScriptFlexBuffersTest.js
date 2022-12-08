@@ -27,6 +27,7 @@ function testSingleValueBuffers() {
   function _assert(object, buffer) {
     assert.deepStrictEqual(flexbuffers.toObject(new Uint8Array(buffer).buffer), object);
   }
+
   _assert(true, [1, 104, 1]);
   _assert(false, [0, 104, 1]);
   _assert(25, [25, 4, 1]);
@@ -47,14 +48,15 @@ function testSingleValueBuffers() {
   _assert(-1025, [255, 251, 5, 2]);
   _assert("Maxim", [5, 77, 97, 120, 105, 109, 0, 6, 20, 1]);
   _assert("hello 😱", [10, 104, 101, 108, 108, 111, 32, 240, 159, 152, 177, 0, 11, 20, 1]);
-  _assert({a:12}, [97, 0, 1, 3, 1, 1, 1, 12, 4, 2, 36, 1]);
-  _assert({"":45, "a": 12}, [0, 97, 0, 2, 4, 4, 2, 1, 2, 45, 12, 4, 4, 4, 36, 1]);
+  _assert({a: 12}, [97, 0, 1, 3, 1, 1, 1, 12, 4, 2, 36, 1]);
+  _assert({"": 45, "a": 12}, [0, 97, 0, 2, 4, 4, 2, 1, 2, 45, 12, 4, 4, 4, 36, 1]);
 }
 
 function testEncode() {
   function _assert(value, buffer) {
     assert.deepStrictEqual(flexbuffers.encode(value), new Uint8Array(buffer));
   }
+
   _assert(null, [0, 0, 1]);
   _assert(true, [1, 104, 1]);
   _assert(false, [0, 104, 1]);
@@ -100,46 +102,46 @@ function testEncode() {
     4, 15, 20, 104, 0, 104, 54, 43, 1
   ]);
   _assert({"a": 12}, [97, 0, 1, 3, 1, 1, 1, 12, 4, 2, 36, 1]);
-  _assert({"a": 12, "":45}, [0, 97, 0, 2, 4, 4, 2, 1, 2, 45, 12, 4, 4, 4, 36, 1]);
+  _assert({"a": 12, "": 45}, [0, 97, 0, 2, 4, 4, 2, 1, 2, 45, 12, 4, 4, 4, 36, 1]);
   // JS currently does not support key vector offset sharing
-  _assert([{'something':12}, {'something': 45}], [
+  _assert([{'something': 12}, {'something': 45}], [
     115, 111, 109, 101, 116, 104, 105, 110, 103, 0,
     1, 11, 1, 1, 1, 12, 4, 6, 1, 1, 45, 4, 2, 8, 4, 36, 36, 4, 40, 1
   ]);
 }
 
 function testDeduplicationOff() {
-  let buffer = flexbuffers.encode([{'something':12}, {'something': 45}], 1, true, true, false);
+  let buffer = flexbuffers.encode([{'something': 12}, {'something': 45}], 1, true, true, false);
   assert.deepStrictEqual(buffer, new Uint8Array([
     115, 111, 109, 101, 116, 104, 105, 110, 103,
-    0,   1,  11,   1,   1,   1,  12,   4,   1,
-    18,   1,   1,   1,  45,   4,   2,  10,   4,
-    36,  36,   4,  40,   1
+    0, 1, 11, 1, 1, 1, 12, 4, 1,
+    18, 1, 1, 1, 45, 4, 2, 10, 4,
+    36, 36, 4, 40, 1
   ]));
 
-  buffer = flexbuffers.encode([{'something':12}, {'something': 45}], 1, true, false, false);
+  buffer = flexbuffers.encode([{'something': 12}, {'something': 45}], 1, true, false, false);
   assert.deepStrictEqual(buffer, new Uint8Array([
-    115, 111, 109, 101, 116, 104, 105, 110, 103,   0,
-    1,  11,   1,   1,   1,  12,   4, 115, 111, 109,
-    101, 116, 104, 105, 110, 103,   0,   1,  11,   1,
-    1,   1,  45,   4,   2,  20,   4,  36,  36,   4,
-    40,   1
+    115, 111, 109, 101, 116, 104, 105, 110, 103, 0,
+    1, 11, 1, 1, 1, 12, 4, 115, 111, 109,
+    101, 116, 104, 105, 110, 103, 0, 1, 11, 1,
+    1, 1, 45, 4, 2, 20, 4, 36, 36, 4,
+    40, 1
   ]));
 
   buffer = flexbuffers.encode(['something', 'something', 'dark'], 1, true, false, false);
   assert.deepStrictEqual(buffer, new Uint8Array([
     9, 115, 111, 109, 101, 116, 104,
-    105, 110, 103,   0,   4, 100,  97,
-    114, 107,   0,   3,  17,  18,   8,
-    3,  60,   1
+    105, 110, 103, 0, 4, 100, 97,
+    114, 107, 0, 3, 17, 18, 8,
+    3, 60, 1
   ]));
 
   buffer = flexbuffers.encode(['something', 'something', 'dark'], 1, false, false, false);
   assert.deepStrictEqual(buffer, new Uint8Array([
     9, 115, 111, 109, 101, 116, 104, 105, 110,
-    103,   0,   9, 115, 111, 109, 101, 116, 104,
-    105, 110, 103,   0,   4, 100,  97, 114, 107,
-    0,   3,  28,  18,   8,   3,  60,   1
+    103, 0, 9, 115, 111, 109, 101, 116, 104,
+    105, 110, 103, 0, 4, 100, 97, 114, 107,
+    0, 3, 28, 18, 8, 3, 60, 1
   ]));
 }
 
@@ -150,18 +152,21 @@ function testIndirectAdd() {
     const data = builder.finish();
     assert.deepStrictEqual(data, new Uint8Array(buffer));
   }
+
   function _assertUInt(buffer, value, indirect = false, cache = false) {
     const builder = flexbuffers.builder();
     builder.addUInt(value, indirect, cache);
     const data = builder.finish();
     assert.deepStrictEqual(data, new Uint8Array(buffer));
   }
+
   function _assertFloat(buffer, value, indirect = false, cache = false) {
     const builder = flexbuffers.builder();
     builder.addFloat(value, indirect, cache);
     const data = builder.finish();
     assert.deepStrictEqual(data, new Uint8Array(buffer));
   }
+
   _assertInt([0, 4, 1], 0);
   _assertInt([0, 1, 24, 1], 0, true);
   _assertInt([255, 0, 5, 2], 255);
@@ -264,7 +269,7 @@ function testRoundTrip() {
 
   _assert(example);
   _assert(0x100000001n);
-  _assert({ test_number: 72.6 })
+  _assert({test_number: 72.6})
 }
 
 function testRoundTripWithBuilder() {
@@ -357,14 +362,23 @@ function testGoldBuffer() {
     bar: [1, 2, 3],
     bar3: [1, 2, 3],
     foo: 100,
-    mymap: {foo:'Fred'},
+    mymap: {foo: 'Fred'},
     vec: [-100, 'Fred', 4, new Uint8Array([77]), false, 4]
   });
 }
 
 function testBugWhereOffestWereStoredAsIntInsteadOfUInt() {
   // Reported in https://github.com/google/flatbuffers/issues/5949#issuecomment-688421193
-  const object = {'channels_in': 64, 'dilation_height_factor': 1, 'dilation_width_factor': 1, 'fused_activation_function': 1, 'pad_values': 1, 'padding': 0, 'stride_height': 1, 'stride_width': 1};
+  const object = {
+    'channels_in': 64,
+    'dilation_height_factor': 1,
+    'dilation_width_factor': 1,
+    'fused_activation_function': 1,
+    'pad_values': 1,
+    'padding': 0,
+    'stride_height': 1,
+    'stride_width': 1
+  };
   let data1 = flexbuffers.encode(object);
   const data = [99, 104, 97, 110, 110, 101, 108, 115, 95, 105, 110, 0,
     100, 105, 108, 97, 116, 105, 111, 110, 95, 104, 101, 105, 103, 104, 116, 95, 102, 97, 99, 116, 111, 114, 0,

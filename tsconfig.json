@@ -2,12 +2,16 @@
   "compilerOptions": {
     "target": "ES5",
     "module": "commonjs",
-    "lib": ["ES2015", "ES2020.BigInt", "DOM"],
+    "lib": [
+      "ES2015",
+      "ES2020.BigInt",
+      "DOM"
+    ],
     "declaration": true,
     "outDir": "./js",
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true, 
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
   "include": [

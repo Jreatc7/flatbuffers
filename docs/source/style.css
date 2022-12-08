@@ -29,7 +29,7 @@ dl,
 
 .title {
   color: #212121;
-  font: 300 34px/40px Roboto,sans-serif;
+  font: 300 34px/40px Roboto, sans-serif;
 }
 
 #nav-tree {
@@ -187,7 +187,7 @@ div.contents {
 .directory td,
 .directory td.entry,
 .directory td.desc {
-  background: rgba(255,255,255,.95);
+  background: rgba(255, 255, 255, .95);
   border-left: none;
   color: #212121;
   padding-top: 10px;
@@ -232,7 +232,7 @@ div.contents {
 
 .memdoc, dl.reflist dd {
   border: none;
-  background-color: rgba(255,255,255,.95);
+  background-color: rgba(255, 255, 255, .95);
   background-image: none;
   box-shadow: none;
   -webkit-box-shadow: none;
@@ -259,7 +259,7 @@ table.doxtable td, table.doxtable th {
 }
 
 table.doxtable td {
-  background-color: rgba(255,255,255,.95);
+  background-color: rgba(255, 255, 255, .95);
 }
 
 .memberdecls {
@@ -276,7 +276,7 @@ table.doxtable td {
 }
 
 .memberdecls tr:not(.heading) td {
-  background-color: rgba(255,255,255,.95);
+  background-color: rgba(255, 255, 255, .95);
 }
 
 h1, h2, h2.groupheader, h3, h4, h5, h6 {
@@ -285,7 +285,7 @@ h1, h2, h2.groupheader, h3, h4, h5, h6 {
 
 h1 {
   border-bottom: 1px solid #ebebeb;
-  font: 400 28px/32px Roboto,sans-serif;
+  font: 400 28px/32px Roboto, sans-serif;
   letter-spacing: -.01em;
   margin: 40px 0 20px;
   padding-bottom: 3px;
@@ -293,19 +293,19 @@ h1 {
 
 h2, h2.groupheader {
   border-bottom: 1px solid #ebebeb;
-  font: 400 23px/32px Roboto,sans-serif;
+  font: 400 23px/32px Roboto, sans-serif;
   letter-spacing: -.01em;
   margin: 40px 0 20px;
   padding-bottom: 3px;
 }
 
 h3 {
-  font: 500 20px/32px Roboto,sans-serif;
+  font: 500 20px/32px Roboto, sans-serif;
   margin: 32px 0 16px;
 }
 
 h4 {
-  font: 500 18px/32px Roboto,sans-serif;
+  font: 500 18px/32px Roboto, sans-serif;
   margin: 32px 0 16px;
 }
 
@@ -337,8 +337,7 @@ li p {
   padding: 0;
 }
 
-div.summary
-{
+div.summary {
   float: none;
   font-size: 8pt;
   padding-left: 5px;
@@ -366,7 +365,7 @@ div.line {
 code, pre {
   color: #455a64;
   background: #f7f7f7;
-  font: 400 100% Roboto Mono,monospace;
+  font: 400 100% Roboto Mono, monospace;
   padding: 1px 4px;
 }
 
@@ -387,7 +386,7 @@ span.keywordtype {
 }
 
 span.mlabel {
-  background: rgba(255,255,255,.25);
+  background: rgba(255, 255, 255, .25);
   border: none;
 }
 

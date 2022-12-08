@@ -12,9 +12,9 @@ platforms:
       - "mkdir $SWIFT_HOME"
       - "curl https://download.swift.org/swift-${SWIFT_VERSION}-release/ubuntu1804/swift-${SWIFT_VERSION}-RELEASE/swift-${SWIFT_VERSION}-RELEASE-ubuntu18.04.tar.gz | tar xvz --strip-components=1 -C $SWIFT_HOME"
     build_targets:
-    - "//..."
+      - "//..."
     test_targets:
-    - "//..."
+      - "//..."
   ubuntu2004:
     environment:
       CC: clang
@@ -26,11 +26,11 @@ platforms:
       - "mkdir $SWIFT_HOME"
       - "curl https://download.swift.org/swift-${SWIFT_VERSION}-release/ubuntu2004/swift-${SWIFT_VERSION}-RELEASE/swift-${SWIFT_VERSION}-RELEASE-ubuntu20.04.tar.gz | tar xvz --strip-components=1 -C $SWIFT_HOME"
     build_targets:
-    - "//..."
+      - "//..."
     test_targets:
-    - "//..."
+      - "//..."
   macos:
     build_targets:
-    - "//..."
+      - "//..."
     test_targets:
-    - "//..."
+      - "//..."

@@ -23,6 +23,7 @@ rootdir=$(cd $sampledir/.. && pwd)
 currentdir=$(pwd)
 
 if [[ "$sampledir" != "$currentdir" ]]; then
+  # shellcheck disable=SC2086
   echo Error: This script must be run from inside the $sampledir directory.
   echo You executed it from the $currentdir directory.
   exit 1
@@ -32,10 +33,15 @@ fi
 # root `/flatbuffers` directory.
 if [ -e ../flatc ]; then
   ../flatc --dart -o ../dart/example/ monster.fbs
+# shellcheck disable=SC1073
 elif [ -e ../Debug/flatc ]; then
   ../Debug/flatc --dart -o ../dart/example/ monster.fbs
+# shellcheck disable=SC1009
+# shellcheck disable=SC1072
 else
+  # shellcheck disable=SC1073
   echo 'flatc' could not be found. Make sure to build FlatBuffers from the \
+       # shellcheck disable=SC2086
        $rootdir directory.
   exit 1
 fi

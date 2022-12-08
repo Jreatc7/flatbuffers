@@ -1,6 +1,6 @@
-import { BitWidth } from './bit-width.js'
-import { toByteWidth, fromByteWidth } from './bit-width-util.js'
-import { toUTF8Array, fromUTF8Array } from './flexbuffers-util.js'
+import {BitWidth} from './bit-width.js'
+import {toByteWidth, fromByteWidth} from './bit-width-util.js'
+import {toUTF8Array, fromUTF8Array} from './flexbuffers-util.js'
 
 export function validateOffset(dataView: DataView, offset: number, width: number): void {
   if (dataView.byteLength <= offset + width || (offset & (toByteWidth(width) - 1)) !== 0) {

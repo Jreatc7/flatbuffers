@@ -9,13 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BenchmarkDotNet" Version="0.11.3" />
-    <PackageReference Include="BenchmarkDotNet.Diagnostics.Windows" Version="0.11.3" />
+    <PackageReference Include="BenchmarkDotNet" Version="0.11.3"/>
+    <PackageReference Include="BenchmarkDotNet.Diagnostics.Windows" Version="0.11.3"/>
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="..\..\net\FlatBuffers\*.cs" Link="FlatBuffers\%(FileName).cs" />
-    <Compile Include="..\MyGame\**\*.cs" Link="MyGame\Example\%(FileName).cs" />
+    <Compile Include="..\..\net\FlatBuffers\*.cs" Link="FlatBuffers\%(FileName).cs"/>
+    <Compile Include="..\MyGame\**\*.cs" Link="MyGame\Example\%(FileName).cs"/>
   </ItemGroup>
 
 </Project>

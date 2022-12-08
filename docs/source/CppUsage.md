@@ -1,4 +1,4 @@
-Use in C++    {#flatbuffers_guide_use_cpp}
+Use in C++ {#flatbuffers_guide_use_cpp}
 ==========
 
 ## Before you get started
@@ -90,13 +90,13 @@ convenient accessors for all fields, e.g. `hp()`, `mana()`, etc:
 
 The following attributes are supported:
 
--   `shared` (on a field): For string fields, this enables the usage of string
-    pooling (i.e. `CreateSharedString`) as default serialization behavior.
+- `shared` (on a field): For string fields, this enables the usage of string
+  pooling (i.e. `CreateSharedString`) as default serialization behavior.
 
-    Specifically, `CreateXxxDirect` functions and `Pack` functions for object
-    based API (see below) will use `CreateSharedString` to create strings.
+  Specifically, `CreateXxxDirect` functions and `Pack` functions for object
+  based API (see below) will use `CreateSharedString` to create strings.
 
-## Object based API  {#flatbuffers_cpp_object_based_api}
+## Object based API {#flatbuffers_cpp_object_based_api}
 
 FlatBuffers is all about memory efficiency, which is why its base API is written
 around using as little as possible of it. This does make the API clumsier
@@ -127,22 +127,22 @@ To use:
 
 The following attributes are specific to the object-based API code generation:
 
--   `native_inline` (on a field): Because FlatBuffer tables and structs are
-    optionally present in a given buffer, they are best represented as pointers
-    (specifically std::unique_ptrs) in the native class since they can be null.
-    This attribute changes the member declaration to use the type directly
-    rather than wrapped in a unique_ptr.
+- `native_inline` (on a field): Because FlatBuffer tables and structs are
+  optionally present in a given buffer, they are best represented as pointers
+  (specifically std::unique_ptrs) in the native class since they can be null.
+  This attribute changes the member declaration to use the type directly
+  rather than wrapped in a unique_ptr.
 
--   `native_default("value")` (on a field): For members that are declared
-    "native_inline", the value specified with this attribute will be included
-    verbatim in the class constructor initializer list for this member.
+- `native_default("value")` (on a field): For members that are declared
+  "native_inline", the value specified with this attribute will be included
+  verbatim in the class constructor initializer list for this member.
 
--   `native_custom_alloc("custom_allocator")` (on a table or struct): When using the
-    object-based API all generated NativeTables that  are allocated when unpacking
-    your  flatbuffer will use "custom allocator". The allocator is also used by
-    any std::vector that appears in a table defined with `native_custom_alloc`.
-    This can be  used to provide allocation from a pool for example, for faster
-    unpacking when using the object-based API.
+- `native_custom_alloc("custom_allocator")` (on a table or struct): When using the
+  object-based API all generated NativeTables that are allocated when unpacking
+  your flatbuffer will use "custom allocator". The allocator is also used by
+  any std::vector that appears in a table defined with `native_custom_alloc`.
+  This can be used to provide allocation from a pool for example, for faster
+  unpacking when using the object-based API.
 
 Minimal Example:
 
@@ -181,8 +181,8 @@ with `custom_allocator` defined before `flatbuffers.h` is included, as:
     };
 ```
 
--   `native_type("type")` (on a struct): In some cases, a more optimal C++ data
-type exists for a given struct.  For example, the following schema:
+- `native_type("type")` (on a struct): In some cases, a more optimal C++ data
+  type exists for a given struct. For example, the following schema:
 
 ```cpp
     struct Vec2 {
@@ -214,7 +214,7 @@ can provide more functionality, eg.
 ```
 
 The `native_type` attribute will replace the usage of the generated class
-with the given type.  So, continuing with the example, the generated
+with the given type. So, continuing with the example, the generated
 code would use `vector2` in place of `Vec2T` for all generated code of
 the Object-Based API.
 
@@ -228,13 +228,13 @@ provide the following functions to aide in the serialization process:
     }
 ```
 
--   `native_type_pack_name("name")` (on a struct when `native_type` is
-    specified, too): when you want to use the same `native_type` multiple times
-    (e. g. with different precision) you must make the names of the Pack/UnPack
-    functions unique, otherwise you will run into compile errors. This attribute
-    appends a name to the expected Pack/UnPack functions. So when you
-    specify `native_type_pack_name("Vec2")` in the above example you now need to
-    implement these serialization functions instead:
+- `native_type_pack_name("name")` (on a struct when `native_type` is
+  specified, too): when you want to use the same `native_type` multiple times
+  (e. g. with different precision) you must make the names of the Pack/UnPack
+  functions unique, otherwise you will run into compile errors. This attribute
+  appends a name to the expected Pack/UnPack functions. So when you
+  specify `native_type_pack_name("Vec2")` in the above example you now need to
+  implement these serialization functions instead:
 
 ```cpp
     namespace flatbuffers {
@@ -245,14 +245,14 @@ provide the following functions to aide in the serialization process:
 
 Finally, the following top-level attributes:
 
--   `native_include("path")` (at file level): Because the `native_type` attribute
-    can be used to introduce types that are unknown to flatbuffers, it may be
-    necessary to include "external" header files in the generated code.  This
-    attribute can be used to directly add an #include directive to the top of
-    the generated code that includes the specified path directly.
+- `native_include("path")` (at file level): Because the `native_type` attribute
+  can be used to introduce types that are unknown to flatbuffers, it may be
+  necessary to include "external" header files in the generated code. This
+  attribute can be used to directly add an #include directive to the top of
+  the generated code that includes the specified path directly.
 
--   `force_align`: this attribute may not be respected in the object API,
-    depending on the aligned of the allocator used with `new`.
+- `force_align`: this attribute may not be respected in the object API,
+  depending on the aligned of the allocator used with `new`.
 
 # External references
 
@@ -280,7 +280,7 @@ influence this either globally (using the `--cpp-ptr-type` argument to
 `flatc`) or per field (using the `cpp_ptr_type` attribute) to by any smart
 pointer type (`my_ptr<T>`), or by specifying `naked` as the type to get `T *`
 pointers. Unlike the smart pointers, naked pointers do not manage memory for
-you, so you'll have to manage their lifecycles manually.  To reference the
+you, so you'll have to manage their lifecycles manually. To reference the
 pointer type specified by the `--cpp-ptr-type` argument to `flatc` from a
 flatbuffer field set the `cpp_ptr_type` attribute to `default_ptr_type`.
 
@@ -357,23 +357,24 @@ can have fast lookups directly from a FlatBuffer without having to unpack
 your data into a `std::map` or similar.
 
 To use it:
--   Designate one of the fields in a table as they "key" field. You do this
-    by setting the `key` attribute on this field, e.g.
-    `name:string (key)`.
-    You may only have one key field, and it must be of string or scalar type.
--   Write out tables of this type as usual, collect their offsets in an
-    array or vector.
--   Instead of `CreateVector`, call `CreateVectorOfSortedTables`,
-    which will first sort all offsets such that the tables they refer to
-    are sorted by the key field, then serialize it.
--   Now when you're accessing the FlatBuffer, you can use `Vector::LookupByKey`
-    instead of just `Vector::Get` to access elements of the vector, e.g.:
-    `myvector->LookupByKey("Fred")`, which returns a pointer to the
-    corresponding table type, or `nullptr` if not found.
-    `LookupByKey` performs a binary search, so should have a similar speed to
-    `std::map`, though may be faster because of better caching. `LookupByKey`
-    only works if the vector has been sorted, it will likely not find elements
-    if it hasn't been sorted.
+
+- Designate one of the fields in a table as they "key" field. You do this
+  by setting the `key` attribute on this field, e.g.
+  `name:string (key)`.
+  You may only have one key field, and it must be of string or scalar type.
+- Write out tables of this type as usual, collect their offsets in an
+  array or vector.
+- Instead of `CreateVector`, call `CreateVectorOfSortedTables`,
+  which will first sort all offsets such that the tables they refer to
+  are sorted by the key field, then serialize it.
+- Now when you're accessing the FlatBuffer, you can use `Vector::LookupByKey`
+  instead of just `Vector::Get` to access elements of the vector, e.g.:
+  `myvector->LookupByKey("Fred")`, which returns a pointer to the
+  corresponding table type, or `nullptr` if not found.
+  `LookupByKey` performs a binary search, so should have a similar speed to
+  `std::map`, though may be faster because of better caching. `LookupByKey`
+  only works if the vector has been sorted, it will likely not find elements
+  if it hasn't been sorted.
 
 ## Direct memory access
 
@@ -455,7 +456,8 @@ it, this will provide you an easy way to use that data directly.
 (see the schema documentation for some specifics on the JSON format
 accepted).
 
-Schema evolution compatibility for the JSON format follows the same rules as the binary format (JSON formatted data will be forwards/backwards compatible with schemas that evolve in a compatible way).
+Schema evolution compatibility for the JSON format follows the same rules as the binary format (JSON formatted data will
+be forwards/backwards compatible with schemas that evolve in a compatible way).
 
 There are two ways to use text formats:
 
@@ -550,6 +552,7 @@ needed to use unions.
 To use scalars, simply wrap them in a struct.
 
 ## Depth limit of nested objects and stack-overflow control
+
 The parser of Flatbuffers schema or json-files is kind of recursive parser.
 To avoid stack-overflow problem the parser has a built-in limiter of
 recursion depth. Number of nested declarations in a schema or number of
@@ -560,6 +563,7 @@ applications. For details see [build](@ref flatbuffers_guide_building) of
 CMake-based projects.
 
 ## Dependence from C-locale {#flatbuffers_locale_cpp}
+
 The Flatbuffers [grammar](@ref flatbuffers grammar) uses ASCII
 character set for identifiers, alphanumeric literals, reserved words.
 
@@ -579,6 +583,7 @@ locale instead. They are part of POSIX-2008 but not part of the C/C++
 standard library, therefore, may be missing on some platforms.
 The Flatbuffers library try to detect these functions at configuration and
 compile time:
+
 - CMake `"CMakeLists.txt"`:
   - Check existence of `strtol_l` and `strtod_l` in the `<stdlib.h>`.
 - Compile-time `"/include/base.h"`:
@@ -592,17 +597,20 @@ or predefine `FLATBUFFERS_LOCALE_INDEPENDENT` symbol.
 
 To test the compatibility of the Flatbuffers library with
 a specific locale use the environment variable `FLATBUFFERS_TEST_LOCALE`:
+
 ```sh
 >FLATBUFFERS_TEST_LOCALE="" ./flattests
 >FLATBUFFERS_TEST_LOCALE="ru_RU.CP1251" ./flattests
 ```
 
 ## Support of floating-point numbers
+
 The Flatbuffers library assumes that a C++ compiler and a CPU are
 compatible with the `IEEE-754` floating-point standard.
 The schema and json parser may fail if `fast-math` or `/fp:fast` mode is active.
 
 ### Support of hexadecimal and special floating-point numbers
+
 According to the [grammar](@ref flatbuffers_grammar) `fbs` and `json` files
 may use hexadecimal and special (`NaN`, `Inf`) floating-point literals.
 The Flatbuffers uses `strtof` and `strtod` functions to parse floating-point
@@ -614,11 +622,13 @@ if `FLATBUFFERS_HAS_NEW_STRTOD` constant is less than `1`.
 In this case, schemas with hexadecimal or special literals cannot be used.
 
 ### Comparison of floating-point NaN values
+
 The floating-point `NaN` (`not a number`) is special value which
 representing an undefined or unrepresentable value.
 `NaN` may be explicitly assigned to variables, typically as a representation
 for missing values or may be a result of a mathematical operation.
 The `IEEE-754` defines two kind of `NaNs`:
+
 - Quiet NaNs, or `qNaNs`.
 - Signaling NaNs, or `sNaNs`.
 

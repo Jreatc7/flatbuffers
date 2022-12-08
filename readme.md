@@ -10,13 +10,14 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/wvo.svg?style=social)](https://twitter.com/wvo)
 [![Twitter Follow](https://img.shields.io/twitter/follow/dbaileychess.svg?style=social)](https://twitter.com/dbaileychess)
 
-
 **FlatBuffers** is a cross platform serialization library architected for
-maximum memory efficiency. It allows you to directly access serialized data without parsing/unpacking it first, while still having great forwards/backwards compatibility.
+maximum memory efficiency. It allows you to directly access serialized data without parsing/unpacking it first, while
+still having great forwards/backwards compatibility.
 
 **Go to our [landing page][] to browse our documentation.**
 
 ## Supported operating systems
+
 * Windows
 * macOS
 * Linux
@@ -57,20 +58,26 @@ Code generation and runtime libraries for many popular languages.
 * [Discord Server](https:///discord.gg/6qgKs3R)
 * [Gitter](https://gitter.im/google/flatbuffers)
 
-
 ## Security
 
 Please see our [Security Policy](SECURITY.md) for reporting vulnerabilities.
 
 ## Licensing
+
 *Flatbuffers* is licensed under the Apache License, Version 2.0. See [LICENSE][] for the full license text.
 
 <br>
 
-   [CONTRIBUTING]: http://github.com/google/flatbuffers/blob/master/CONTRIBUTING.md
-   [`flatbuffers` tag]: https://stackoverflow.com/questions/tagged/flatbuffers
-   [FlatBuffers Google Group]: https://groups.google.com/forum/#!forum/flatbuffers
-   [FlatBuffers Issues Tracker]: http://github.com/google/flatbuffers/issues
-   [stackoverflow.com]: http://stackoverflow.com/search?q=flatbuffers
-   [landing page]: https://google.github.io/flatbuffers
-   [LICENSE]: https://github.com/google/flatbuffers/blob/master/LICENSE.txt
+[CONTRIBUTING]: http://github.com/google/flatbuffers/blob/master/CONTRIBUTING.md
+
+[`flatbuffers` tag]: https://stackoverflow.com/questions/tagged/flatbuffers
+
+[FlatBuffers Google Group]: https://groups.google.com/forum/#!forum/flatbuffers
+
+[FlatBuffers Issues Tracker]: http://github.com/google/flatbuffers/issues
+
+[stackoverflow.com]: http://stackoverflow.com/search?q=flatbuffers
+
+[landing page]: https://google.github.io/flatbuffers
+
+[LICENSE]: https://github.com/google/flatbuffers/blob/master/LICENSE.txt

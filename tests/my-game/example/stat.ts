@@ -3,136 +3,137 @@
 import * as flatbuffers from 'flatbuffers';
 
 
-
 export class Stat {
-  bb: flatbuffers.ByteBuffer|null = null;
+  bb: flatbuffers.ByteBuffer | null = null;
   bb_pos = 0;
-  __init(i:number, bb:flatbuffers.ByteBuffer):Stat {
-  this.bb_pos = i;
-  this.bb = bb;
-  return this;
-}
 
-static getRootAsStat(bb:flatbuffers.ByteBuffer, obj?:Stat):Stat {
-  return (obj || new Stat()).__init(bb.readInt32(bb.position()) + bb.position(), bb);
-}
-
-static getSizePrefixedRootAsStat(bb:flatbuffers.ByteBuffer, obj?:Stat):Stat {
-  bb.setPosition(bb.position() + flatbuffers.SIZE_PREFIX_LENGTH);
-  return (obj || new Stat()).__init(bb.readInt32(bb.position()) + bb.position(), bb);
-}
-
-id():string|null
-id(optionalEncoding:flatbuffers.Encoding):string|Uint8Array|null
-id(optionalEncoding?:any):string|Uint8Array|null {
-  const offset = this.bb!.__offset(this.bb_pos, 4);
-  return offset ? this.bb!.__string(this.bb_pos + offset, optionalEncoding) : null;
-}
-
-val():bigint {
-  const offset = this.bb!.__offset(this.bb_pos, 6);
-  return offset ? this.bb!.readInt64(this.bb_pos + offset) : BigInt('0');
-}
-
-mutate_val(value:bigint):boolean {
-  const offset = this.bb!.__offset(this.bb_pos, 6);
-
-  if (offset === 0) {
-    return false;
+  __init(i: number, bb: flatbuffers.ByteBuffer): Stat {
+    this.bb_pos = i;
+    this.bb = bb;
+    return this;
   }
 
-  this.bb!.writeInt64(this.bb_pos + offset, value);
-  return true;
-}
-
-count():number {
-  const offset = this.bb!.__offset(this.bb_pos, 8);
-  return offset ? this.bb!.readUint16(this.bb_pos + offset) : 0;
-}
-
-mutate_count(value:number):boolean {
-  const offset = this.bb!.__offset(this.bb_pos, 8);
-
-  if (offset === 0) {
-    return false;
+  static getRootAsStat(bb: flatbuffers.ByteBuffer, obj?: Stat): Stat {
+    return (obj || new Stat()).__init(bb.readInt32(bb.position()) + bb.position(), bb);
   }
 
-  this.bb!.writeUint16(this.bb_pos + offset, value);
-  return true;
-}
+  static getSizePrefixedRootAsStat(bb: flatbuffers.ByteBuffer, obj?: Stat): Stat {
+    bb.setPosition(bb.position() + flatbuffers.SIZE_PREFIX_LENGTH);
+    return (obj || new Stat()).__init(bb.readInt32(bb.position()) + bb.position(), bb);
+  }
 
-static getFullyQualifiedName():string {
-  return 'MyGame_Example_Stat';
-}
+  id(): string | null
+  id(optionalEncoding: flatbuffers.Encoding): string | Uint8Array | null
+  id(optionalEncoding?: any): string | Uint8Array | null {
+    const offset = this.bb!.__offset(this.bb_pos, 4);
+    return offset ? this.bb!.__string(this.bb_pos + offset, optionalEncoding) : null;
+  }
 
-static startStat(builder:flatbuffers.Builder) {
-  builder.startObject(3);
-}
+  val(): bigint {
+    const offset = this.bb!.__offset(this.bb_pos, 6);
+    return offset ? this.bb!.readInt64(this.bb_pos + offset) : BigInt('0');
+  }
 
-static addId(builder:flatbuffers.Builder, idOffset:flatbuffers.Offset) {
-  builder.addFieldOffset(0, idOffset, 0);
-}
+  mutate_val(value: bigint): boolean {
+    const offset = this.bb!.__offset(this.bb_pos, 6);
 
-static addVal(builder:flatbuffers.Builder, val:bigint) {
-  builder.addFieldInt64(1, val, BigInt('0'));
-}
+    if (offset === 0) {
+      return false;
+    }
 
-static addCount(builder:flatbuffers.Builder, count:number) {
-  builder.addFieldInt16(2, count, 0);
-}
+    this.bb!.writeInt64(this.bb_pos + offset, value);
+    return true;
+  }
 
-static endStat(builder:flatbuffers.Builder):flatbuffers.Offset {
-  const offset = builder.endObject();
-  return offset;
-}
+  count(): number {
+    const offset = this.bb!.__offset(this.bb_pos, 8);
+    return offset ? this.bb!.readUint16(this.bb_pos + offset) : 0;
+  }
 
-static createStat(builder:flatbuffers.Builder, idOffset:flatbuffers.Offset, val:bigint, count:number):flatbuffers.Offset {
-  Stat.startStat(builder);
-  Stat.addId(builder, idOffset);
-  Stat.addVal(builder, val);
-  Stat.addCount(builder, count);
-  return Stat.endStat(builder);
-}
+  mutate_count(value: number): boolean {
+    const offset = this.bb!.__offset(this.bb_pos, 8);
 
-serialize():Uint8Array {
-  return this.bb!.bytes();
-}
+    if (offset === 0) {
+      return false;
+    }
 
-static deserialize(buffer: Uint8Array):Stat {
-  return Stat.getRootAsStat(new flatbuffers.ByteBuffer(buffer))
-}
+    this.bb!.writeUint16(this.bb_pos + offset, value);
+    return true;
+  }
 
-unpack(): StatT {
-  return new StatT(
-    this.id(),
-    this.val(),
-    this.count()
-  );
-}
+  static getFullyQualifiedName(): string {
+    return 'MyGame_Example_Stat';
+  }
+
+  static startStat(builder: flatbuffers.Builder) {
+    builder.startObject(3);
+  }
+
+  static addId(builder: flatbuffers.Builder, idOffset: flatbuffers.Offset) {
+    builder.addFieldOffset(0, idOffset, 0);
+  }
+
+  static addVal(builder: flatbuffers.Builder, val: bigint) {
+    builder.addFieldInt64(1, val, BigInt('0'));
+  }
+
+  static addCount(builder: flatbuffers.Builder, count: number) {
+    builder.addFieldInt16(2, count, 0);
+  }
+
+  static endStat(builder: flatbuffers.Builder): flatbuffers.Offset {
+    const offset = builder.endObject();
+    return offset;
+  }
+
+  static createStat(builder: flatbuffers.Builder, idOffset: flatbuffers.Offset, val: bigint, count: number): flatbuffers.Offset {
+    Stat.startStat(builder);
+    Stat.addId(builder, idOffset);
+    Stat.addVal(builder, val);
+    Stat.addCount(builder, count);
+    return Stat.endStat(builder);
+  }
+
+  serialize(): Uint8Array {
+    return this.bb!.bytes();
+  }
+
+  static deserialize(buffer: Uint8Array): Stat {
+    return Stat.getRootAsStat(new flatbuffers.ByteBuffer(buffer))
+  }
+
+  unpack(): StatT {
+    return new StatT(
+      this.id(),
+      this.val(),
+      this.count()
+    );
+  }
 
 
-unpackTo(_o: StatT): void {
-  _o.id = this.id();
-  _o.val = this.val();
-  _o.count = this.count();
-}
+  unpackTo(_o: StatT): void {
+    _o.id = this.id();
+    _o.val = this.val();
+    _o.count = this.count();
+  }
 }
 
 export class StatT {
-constructor(
-  public id: string|Uint8Array|null = null,
-  public val: bigint = BigInt('0'),
-  public count: number = 0
-){}
+  constructor(
+    public id: string | Uint8Array | null = null,
+    public val: bigint = BigInt('0'),
+    public count: number = 0
+  ) {
+  }
 
 
-pack(builder:flatbuffers.Builder): flatbuffers.Offset {
-  const id = (this.id !== null ? builder.createString(this.id!) : 0);
+  pack(builder: flatbuffers.Builder): flatbuffers.Offset {
+    const id = (this.id !== null ? builder.createString(this.id!) : 0);
 
-  return Stat.createStat(builder,
-    id,
-    this.val,
-    this.count
-  );
-}
+    return Stat.createStat(builder,
+      id,
+      this.val,
+      this.count
+    );
+  }
 }

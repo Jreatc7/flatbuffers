@@ -1,7 +1,7 @@
 /* global BigInt */
 
 import assert from 'assert';
-import { readFileSync, writeFileSync } from 'fs';
+import {readFileSync, writeFileSync} from 'fs';
 import * as flatbuffers from 'flatbuffers';
 import {
   ArrayStructT,
@@ -16,6 +16,7 @@ import {
 BigInt.prototype.toJSON = function () {
   return this.toString();
 };
+
 function fbObjToObj(fbObj) {
   const ret = {};
   for (const propName of Object.keys(fbObj)) {
@@ -29,6 +30,7 @@ function fbObjToObj(fbObj) {
   }
   return ret;
 }
+
 function testBuild(monFile, jsFile) {
   const arrayTable = new ArrayTableT(
     'Complex Array Test',
@@ -90,6 +92,7 @@ function testBuild(monFile, jsFile) {
   }
   return builder.asUint8Array();
 }
+
 function testParse(monFile, jsFile, buffer) {
   if (!buffer) {
     if (!monFile) {
@@ -106,6 +109,7 @@ function testParse(monFile, jsFile, buffer) {
   }
   return arrayTable;
 }
+
 if (process.argv[2] === 'build') {
   testBuild(process.argv[3], process.argv[4]);
 } else if (process.argv[2] === 'parse') {

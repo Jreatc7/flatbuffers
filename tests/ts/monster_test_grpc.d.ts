@@ -1,7 +1,7 @@
 // Generated GRPC code for FlatBuffers TS *** DO NOT EDIT ***
 import * as flatbuffers from 'flatbuffers';
-import { Stat as MyGame_Example_Stat } from './my-game/example/stat';
-import { Monster as MyGame_Example_Monster } from './my-game/example/monster';
+import {Stat as MyGame_Example_Stat} from './my-game/example/stat';
+import {Monster as MyGame_Example_Monster} from './my-game/example/monster';
 
 import * as grpc from '@grpc/grpc-js';
 
@@ -11,6 +11,7 @@ interface IMonsterStorageService extends grpc.ServiceDefinition<grpc.UntypedServ
   GetMaxHitPoint: IMonsterStorageService_IGetMaxHitPoint;
   GetMinMaxHitPoints: IMonsterStorageService_IGetMinMaxHitPoints;
 }
+
 interface IMonsterStorageService_IStore extends grpc.MethodDefinition<MyGame_Example_Monster, MyGame_Example_Stat> {
   path: string; // /MyGame.Example.MonsterStorage/Store
   requestStream: boolean; // false
@@ -63,30 +64,45 @@ export interface IMonsterStorageServer extends grpc.UntypedServiceImplementation
 
 export interface IMonsterStorageClient {
   Store(request: MyGame_Example_Monster, callback: (error: grpc.ServiceError | null, response: MyGame_Example_Stat) => void): grpc.ClientUnaryCall;
+
   Store(request: MyGame_Example_Monster, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: MyGame_Example_Stat) => void): grpc.ClientUnaryCall;
+
   Store(request: MyGame_Example_Monster, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: MyGame_Example_Stat) => void): grpc.ClientUnaryCall;
+
   Retrieve(request: MyGame_Example_Stat, metadata: grpc.Metadata): grpc.ClientReadableStream<MyGame_Example_Monster>;
+
   Retrieve(request: MyGame_Example_Stat, options: Partial<grpc.CallOptions>): grpc.ClientReadableStream<MyGame_Example_Monster>;
+
   GetMaxHitPoint(callback: (error: grpc.ServiceError | null, response: MyGame_Example_Monster) => void): grpc.ClientWritableStream<MyGame_Example_Stat>;
+
   GetMaxHitPoint(metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: MyGame_Example_Monster) => void): grpc.ClientWritableStream<MyGame_Example_Stat>;
+
   GetMaxHitPoint(options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: MyGame_Example_Monster) => void): grpc.ClientWritableStream<MyGame_Example_Stat>;
+
   GetMaxHitPoint(metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: MyGame_Example_Monster) => void): grpc.ClientWritableStream<MyGame_Example_Stat>;
+
   GetMinMaxHitPoints(): grpc.ClientDuplexStream<MyGame_Example_Monster, MyGame_Example_Stat>;
+
   GetMinMaxHitPoints(options: Partial<grpc.CallOptions>): grpc.ClientDuplexStream<MyGame_Example_Monster, MyGame_Example_Stat>;
+
   GetMinMaxHitPoints(metadata: grpc.Metadata, options?: Partial<grpc.CallOptions>): grpc.ClientDuplexStream<MyGame_Example_Monster, MyGame_Example_Stat>;
 }
 
 export class MonsterStorageClient extends grpc.Client implements IMonsterStorageClient {
   constructor(address: string, credentials: grpc.ChannelCredentials, options?: object);
+
   public Store(request: MyGame_Example_Monster, callback: (error: grpc.ServiceError | null, response: MyGame_Example_Stat) => void): grpc.ClientUnaryCall;
   public Store(request: MyGame_Example_Monster, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: MyGame_Example_Stat) => void): grpc.ClientUnaryCall;
   public Store(request: MyGame_Example_Monster, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: MyGame_Example_Stat) => void): grpc.ClientUnaryCall;
+
   public Retrieve(request: MyGame_Example_Stat, metadata: grpc.Metadata): grpc.ClientReadableStream<MyGame_Example_Monster>;
   public Retrieve(request: MyGame_Example_Stat, options: Partial<grpc.CallOptions>): grpc.ClientReadableStream<MyGame_Example_Monster>;
+
   public GetMaxHitPoint(callback: (error: grpc.ServiceError | null, response: MyGame_Example_Monster) => void): grpc.ClientWritableStream<MyGame_Example_Stat>;
   public GetMaxHitPoint(metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: MyGame_Example_Monster) => void): grpc.ClientWritableStream<MyGame_Example_Stat>;
   public GetMaxHitPoint(options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: MyGame_Example_Monster) => void): grpc.ClientWritableStream<MyGame_Example_Stat>;
   public GetMaxHitPoint(metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: MyGame_Example_Monster) => void): grpc.ClientWritableStream<MyGame_Example_Stat>;
+
   public GetMinMaxHitPoints(): grpc.ClientDuplexStream<MyGame_Example_Monster, MyGame_Example_Stat>;
   public GetMinMaxHitPoints(options: Partial<grpc.CallOptions>): grpc.ClientDuplexStream<MyGame_Example_Monster, MyGame_Example_Stat>;
   public GetMinMaxHitPoints(metadata: grpc.Metadata, options?: Partial<grpc.CallOptions>): grpc.ClientDuplexStream<MyGame_Example_Monster, MyGame_Example_Stat>;

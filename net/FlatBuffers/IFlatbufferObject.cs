@@ -16,13 +16,13 @@
 
 namespace Google.FlatBuffers
 {
-    /// <summary>
-    /// This is the base for both structs and tables.
-    /// </summary>
-    public interface IFlatbufferObject
-    {
-        void __init(int _i, ByteBuffer _bb);
+  /// <summary>
+  /// This is the base for both structs and tables.
+  /// </summary>
+  public interface IFlatbufferObject
+  {
+    void __init(int _i, ByteBuffer _bb);
 
-        ByteBuffer ByteBuffer { get; }
-    }
+    ByteBuffer ByteBuffer { get; }
+  }
 }

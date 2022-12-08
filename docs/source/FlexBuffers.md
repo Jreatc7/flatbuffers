@@ -1,4 +1,4 @@
-FlexBuffers    {#flexbuffers}
+FlexBuffers {#flexbuffers}
 ==========
 
 FlatBuffers was designed around schemas, because when you want maximum
@@ -27,7 +27,6 @@ generates smaller binaries for many cases than regular FlatBuffers.
 
 FlexBuffers is still slower than regular FlatBuffers though, so we recommend to
 only use it if you need it.
-
 
 # Usage in C++
 
@@ -119,7 +118,6 @@ map["foo"].AsUInt8();  // 100
 map["unknown"].IsNull();  // true
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
 # Usage in Java
 
 Java implementation follows the C++ one, closely.
@@ -159,12 +157,10 @@ map.get("foo").asUInt();  // 100
 map.get("unknown").isNull();  // true
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
 # Binary encoding
 
 A description of how FlexBuffers are encoded is in the
 [internals](@ref flatbuffers_internals) document.
-
 
 # Nesting inside a FlatBuffer
 
@@ -174,7 +170,6 @@ You can mark a field as containing a FlexBuffer, e.g.
 
 A special accessor will be generated that allows you to access the root value
 directly, e.g. `a_flexbuffer_root().AsInt64()`.
-
 
 # Efficiency tips
 

@@ -1,4 +1,4 @@
-Writing a schema    {#flatbuffers_guide_writing_schema}
+Writing a schema {#flatbuffers_guide_writing_schema}
 ================
 
 The syntax of the schema language (aka IDL, [Interface Definition Language][])
@@ -50,24 +50,24 @@ to omit fields when constructing an object. You have the flexibility to add
 fields without fear of bloating your data. This design is also FlatBuffer's
 mechanism for forward and backwards compatibility. Note that:
 
--   You can add new fields in the schema ONLY at the end of a table
-    definition. Older data will still
-    read correctly, and give you the default value when read. Older code
-    will simply ignore the new field.
-    If you want to have flexibility to use any order for fields in your
-    schema, you can manually assign ids (much like Protocol Buffers),
-    see the `id` attribute below.
+- You can add new fields in the schema ONLY at the end of a table
+  definition. Older data will still
+  read correctly, and give you the default value when read. Older code
+  will simply ignore the new field.
+  If you want to have flexibility to use any order for fields in your
+  schema, you can manually assign ids (much like Protocol Buffers),
+  see the `id` attribute below.
 
--   You cannot delete fields you don't use anymore from the schema,
-    but you can simply
-    stop writing them into your data for almost the same effect.
-    Additionally you can mark them as `deprecated` as in the example
-    above, which will prevent the generation of accessors in the
-    generated C++, as a way to enforce the field not being used any more.
-    (careful: this may break code!).
+- You cannot delete fields you don't use anymore from the schema,
+  but you can simply
+  stop writing them into your data for almost the same effect.
+  Additionally you can mark them as `deprecated` as in the example
+  above, which will prevent the generation of accessors in the
+  generated C++, as a way to enforce the field not being used any more.
+  (careful: this may break code!).
 
--   You may change field names and table names, if you're ok with your
-    code breaking until you've renamed them there too.
+- You may change field names and table names, if you're ok with your
+  code breaking until you've renamed them there too.
 
 See "Schema evolution examples" below for more on this
 topic.
@@ -86,13 +86,13 @@ parent object, and use no virtual table).
 
 Built-in scalar types are
 
--   8 bit: `byte` (`int8`), `ubyte` (`uint8`), `bool`
+- 8 bit: `byte` (`int8`), `ubyte` (`uint8`), `bool`
 
--   16 bit: `short` (`int16`), `ushort` (`uint16`)
+- 16 bit: `short` (`int16`), `ushort` (`uint16`)
 
--   32 bit: `int` (`int32`), `uint` (`uint32`), `float` (`float32`)
+- 32 bit: `int` (`int32`), `uint` (`uint32`), `float` (`float32`)
 
--   64 bit: `long` (`int64`), `ulong` (`uint64`), `double` (`float64`)
+- 64 bit: `long` (`int64`), `ulong` (`uint64`), `double` (`float64`)
 
 The type names in parentheses are alias names such that for example
 `uint8` can be used in place of `ubyte`, and `int32` can be used in
@@ -100,14 +100,14 @@ place of `int` without affecting code generation.
 
 Built-in non-scalar types:
 
--   Vector of any other type (denoted with `[type]`). Nesting vectors
-    is not supported, instead you can wrap the inner vector in a table.
+- Vector of any other type (denoted with `[type]`). Nesting vectors
+  is not supported, instead you can wrap the inner vector in a table.
 
--   `string`, which may only hold UTF-8 or 7-bit ASCII. For other text encodings
-    or general binary data use vectors (`[byte]` or `[ubyte]`) instead.
+- `string`, which may only hold UTF-8 or 7-bit ASCII. For other text encodings
+  or general binary data use vectors (`[byte]` or `[ubyte]`) instead.
 
--   References to other tables or structs, enums or unions (see
-    below).
+- References to other tables or structs, enums or unions (see
+  below).
 
 You can't change types of fields once they're used, with the exception
 of same-size data where a `reinterpret_cast` would give you a desirable result,
@@ -140,11 +140,11 @@ Arrays are currently only supported in a `struct`.
 There are three, mutually exclusive, reactions to the non-presence of a table's
 field in the binary data:
 
-1.   Default valued fields will return the default value (as defined in the schema).
-2.   Optional valued fields will return some form of `null` depending on the
-     local language. (In a sense, `null` is the default value).
-3.   Required fields will cause an error. Flatbuffer verifiers would
-     consider the whole buffer invalid. See the `required` tag below.
+1. Default valued fields will return the default value (as defined in the schema).
+2. Optional valued fields will return some form of `null` depending on the
+   local language. (In a sense, `null` is the default value).
+3. Required fields will cause an error. Flatbuffer verifiers would
+   consider the whole buffer invalid. See the `required` tag below.
 
 When writing a schema, values are a sequence of digits. Values may be optionally
 followed by a decimal point (`.`) and more digits, for float constants, or
@@ -321,70 +321,69 @@ help text).
 
 Current understood attributes:
 
--   `id: n` (on a table field): manually set the field identifier to `n`.
-    If you use this attribute, you must use it on ALL fields of this table,
-    and the numbers must be a contiguous range from 0 onwards.
-    Additionally, since a union type effectively adds two fields, its
-    id must be that of the second field (the first field is the type
-    field and not explicitly declared in the schema).
-    For example, if the last field before the union field had id 6,
-    the union field should have id 8, and the unions type field will
-    implicitly be 7.
-    IDs allow the fields to be placed in any order in the schema.
-    When a new field is added to the schema it must use the next available ID.
--   `deprecated` (on a field): do not generate accessors for this field
-    anymore, code should stop using this data. Old data may still contain this
-    field, but it won't be accessible anymore by newer code. Note that if you
-    deprecate a field that was previous required, old code may fail to validate
-    new data (when using the optional verifier).
--   `required` (on a non-scalar table field): this field must always be set.
-    By default, fields do not need to be present in the binary. This is
-    desirable, as it helps with forwards/backwards compatibility, and
-    flexibility of data structures. By specifying this attribute, you make non-
-    presence in an error for both reader and writer. The reading code may access
-    the field directly, without checking for null. If the constructing code does
-    not initialize this field, they will get an assert, and also the verifier
-    will fail on buffers that have missing required fields. Both adding and
-    removing this attribute may be forwards/backwards incompatible as readers
-    will be unable read old or new data, respectively, unless the data happens to
-    always have the field set.
--   `force_align: size` (on a struct): force the alignment of this struct
-    to be something higher than what it is naturally aligned to. Causes
-    these structs to be aligned to that amount inside a buffer, IF that
-    buffer is allocated with that alignment (which is not necessarily
-    the case for buffers accessed directly inside a `FlatBufferBuilder`).
-    Note: currently not guaranteed to have an effect when used with
-    `--object-api`, since that may allocate objects at alignments less than
-    what you specify with `force_align`.
--   `force_align: size` (on a vector): force the alignment of this vector to be
-    something different than what the element size would normally dictate.
-    Note: Now only work for generated C++ code.
--   `bit_flags` (on an unsigned enum): the values of this field indicate bits,
-    meaning that any unsigned value N specified in the schema will end up
-    representing 1<<N, or if you don't specify values at all, you'll get
-    the sequence 1, 2, 4, 8, ...
--   `nested_flatbuffer: "table_name"` (on a field): this indicates that the field
-    (which must be a vector of ubyte) contains flatbuffer data, for which the
-    root type is given by `table_name`. The generated code will then produce
-    a convenient accessor for the nested FlatBuffer.
--   `flexbuffer` (on a field): this indicates that the field
-    (which must be a vector of ubyte) contains flexbuffer data. The generated
-    code will then produce a convenient accessor for the FlexBuffer root.
--   `key` (on a field): this field is meant to be used as a key when sorting
-    a vector of the type of table it sits in. Can be used for in-place
-    binary search.
--   `hash` (on a field). This is an (un)signed 32/64 bit integer field, whose
-    value during JSON parsing is allowed to be a string, which will then be
-    stored as its hash. The value of attribute is the hashing algorithm to
-    use, one of `fnv1_32` `fnv1_64` `fnv1a_32` `fnv1a_64`.
--   `original_order` (on a table): since elements in a table do not need
-    to be stored in any particular order, they are often optimized for
-    space by sorting them to size. This attribute stops that from happening.
-    There should generally not be any reason to use this flag.
--   'native_*'.  Several attributes have been added to support the [C++ object
-    Based API](@ref flatbuffers_cpp_object_based_api).  All such attributes
-    are prefixed with the term "native_".
-
+- `id: n` (on a table field): manually set the field identifier to `n`.
+  If you use this attribute, you must use it on ALL fields of this table,
+  and the numbers must be a contiguous range from 0 onwards.
+  Additionally, since a union type effectively adds two fields, its
+  id must be that of the second field (the first field is the type
+  field and not explicitly declared in the schema).
+  For example, if the last field before the union field had id 6,
+  the union field should have id 8, and the unions type field will
+  implicitly be 7.
+  IDs allow the fields to be placed in any order in the schema.
+  When a new field is added to the schema it must use the next available ID.
+- `deprecated` (on a field): do not generate accessors for this field
+  anymore, code should stop using this data. Old data may still contain this
+  field, but it won't be accessible anymore by newer code. Note that if you
+  deprecate a field that was previous required, old code may fail to validate
+  new data (when using the optional verifier).
+- `required` (on a non-scalar table field): this field must always be set.
+  By default, fields do not need to be present in the binary. This is
+  desirable, as it helps with forwards/backwards compatibility, and
+  flexibility of data structures. By specifying this attribute, you make non-
+  presence in an error for both reader and writer. The reading code may access
+  the field directly, without checking for null. If the constructing code does
+  not initialize this field, they will get an assert, and also the verifier
+  will fail on buffers that have missing required fields. Both adding and
+  removing this attribute may be forwards/backwards incompatible as readers
+  will be unable read old or new data, respectively, unless the data happens to
+  always have the field set.
+- `force_align: size` (on a struct): force the alignment of this struct
+  to be something higher than what it is naturally aligned to. Causes
+  these structs to be aligned to that amount inside a buffer, IF that
+  buffer is allocated with that alignment (which is not necessarily
+  the case for buffers accessed directly inside a `FlatBufferBuilder`).
+  Note: currently not guaranteed to have an effect when used with
+  `--object-api`, since that may allocate objects at alignments less than
+  what you specify with `force_align`.
+- `force_align: size` (on a vector): force the alignment of this vector to be
+  something different than what the element size would normally dictate.
+  Note: Now only work for generated C++ code.
+- `bit_flags` (on an unsigned enum): the values of this field indicate bits,
+  meaning that any unsigned value N specified in the schema will end up
+  representing 1<<N, or if you don't specify values at all, you'll get
+  the sequence 1, 2, 4, 8, ...
+- `nested_flatbuffer: "table_name"` (on a field): this indicates that the field
+  (which must be a vector of ubyte) contains flatbuffer data, for which the
+  root type is given by `table_name`. The generated code will then produce
+  a convenient accessor for the nested FlatBuffer.
+- `flexbuffer` (on a field): this indicates that the field
+  (which must be a vector of ubyte) contains flexbuffer data. The generated
+  code will then produce a convenient accessor for the FlexBuffer root.
+- `key` (on a field): this field is meant to be used as a key when sorting
+  a vector of the type of table it sits in. Can be used for in-place
+  binary search.
+- `hash` (on a field). This is an (un)signed 32/64 bit integer field, whose
+  value during JSON parsing is allowed to be a string, which will then be
+  stored as its hash. The value of attribute is the hashing algorithm to
+  use, one of `fnv1_32` `fnv1_64` `fnv1a_32` `fnv1a_64`.
+- `original_order` (on a table): since elements in a table do not need
+  to be stored in any particular order, they are often optimized for
+  space by sorting them to size. This attribute stops that from happening.
+  There should generally not be any reason to use this flag.
+- 'native_*'. Several attributes have been added to support the [C++ object
+  Based API](@ref flatbuffers_cpp_object_based_api). All such attributes
+  are prefixed with the term "native_".
 
 ## JSON Parsing
 
@@ -397,45 +396,45 @@ the C++ documentation on how to do this at runtime).
 Besides needing a schema, there are a few other changes to how it parses
 JSON:
 
--   It accepts field names with and without quotes, like many JSON parsers
-    already do. It outputs them without quotes as well, though can be made
-    to output them using the `strict_json` flag.
--   If a field has an enum type, the parser will recognize symbolic enum
-    values (with or without quotes) instead of numbers, e.g.
-    `field: EnumVal`. If a field is of integral type, you can still use
-    symbolic names, but values need to be prefixed with their type and
-    need to be quoted, e.g. `field: "Enum.EnumVal"`. For enums
-    representing flags, you may place multiple inside a string
-    separated by spaces to OR them, e.g.
-    `field: "EnumVal1 EnumVal2"` or `field: "Enum.EnumVal1 Enum.EnumVal2"`.
--   Similarly, for unions, these need to specified with two fields much like
-    you do when serializing from code. E.g. for a field `foo`, you must
-    add a field `foo_type: FooOne` right before the `foo` field, where
-    `FooOne` would be the table out of the union you want to use.
--   A field that has the value `null` (e.g. `field: null`) is intended to
-    have the default value for that field (thus has the same effect as if
-    that field wasn't specified at all).
--   It has some built in conversion functions, so you can write for example
-    `rad(180)` where ever you'd normally write `3.14159`.
-    Currently supports the following functions: `rad`, `deg`, `cos`, `sin`,
-    `tan`, `acos`, `asin`, `atan`.
+- It accepts field names with and without quotes, like many JSON parsers
+  already do. It outputs them without quotes as well, though can be made
+  to output them using the `strict_json` flag.
+- If a field has an enum type, the parser will recognize symbolic enum
+  values (with or without quotes) instead of numbers, e.g.
+  `field: EnumVal`. If a field is of integral type, you can still use
+  symbolic names, but values need to be prefixed with their type and
+  need to be quoted, e.g. `field: "Enum.EnumVal"`. For enums
+  representing flags, you may place multiple inside a string
+  separated by spaces to OR them, e.g.
+  `field: "EnumVal1 EnumVal2"` or `field: "Enum.EnumVal1 Enum.EnumVal2"`.
+- Similarly, for unions, these need to specified with two fields much like
+  you do when serializing from code. E.g. for a field `foo`, you must
+  add a field `foo_type: FooOne` right before the `foo` field, where
+  `FooOne` would be the table out of the union you want to use.
+- A field that has the value `null` (e.g. `field: null`) is intended to
+  have the default value for that field (thus has the same effect as if
+  that field wasn't specified at all).
+- It has some built in conversion functions, so you can write for example
+  `rad(180)` where ever you'd normally write `3.14159`.
+  Currently supports the following functions: `rad`, `deg`, `cos`, `sin`,
+  `tan`, `acos`, `asin`, `atan`.
 
 When parsing JSON, it recognizes the following escape codes in strings:
 
--   `\n` - linefeed.
--   `\t` - tab.
--   `\r` - carriage return.
--   `\b` - backspace.
--   `\f` - form feed.
--   `\"` - double quote.
--   `\\` - backslash.
--   `\/` - forward slash.
--   `\uXXXX` - 16-bit unicode code point, converted to the equivalent UTF-8
-    representation.
--   `\xXX` - 8-bit binary hexadecimal number XX. This is the only one that is
-     not in the JSON spec (see http://json.org/), but is needed to be able to
-     encode arbitrary binary in strings to text and back without losing
-     information (e.g. the byte 0xFF can't be represented in standard JSON).
+- `\n` - linefeed.
+- `\t` - tab.
+- `\r` - carriage return.
+- `\b` - backspace.
+- `\f` - form feed.
+- `\"` - double quote.
+- `\\` - backslash.
+- `\/` - forward slash.
+- `\uXXXX` - 16-bit unicode code point, converted to the equivalent UTF-8
+  representation.
+- `\xXX` - 8-bit binary hexadecimal number XX. This is the only one that is
+  not in the JSON spec (see http://json.org/), but is needed to be able to
+  encode arbitrary binary in strings to text and back without losing
+  information (e.g. the byte 0xFF can't be represented in standard JSON).
 
 It also generates these escape codes back again when generating JSON from a
 binary representation.
@@ -445,30 +444,30 @@ A format of numeric literals is more close to the C/C++.
 According to the [grammar](@ref flatbuffers_grammar), it accepts the following
 numerical literals:
 
--   An integer literal can have any number of leading zero `0` digits.
-    Unlike C/C++, the parser ignores a leading zero, not interpreting it as the
-    beginning of the octal number.
-    The numbers `[081, -00094]` are equal to `[81, -94]`  decimal integers.
--   The parser accepts unsigned and signed hexadecimal integer numbers.
-    For example: `[0x123, +0x45, -0x67]` are equal to `[291, 69, -103]` decimals.
--   The format of float-point numbers is fully compatible with C/C++ format.
-    If a modern C++ compiler is used the parser accepts hexadecimal and special
-    floating-point literals as well:
-    `[-1.0, 2., .3e0, 3.e4, 0x21.34p-5, -inf, nan]`.
+- An integer literal can have any number of leading zero `0` digits.
+  Unlike C/C++, the parser ignores a leading zero, not interpreting it as the
+  beginning of the octal number.
+  The numbers `[081, -00094]` are equal to `[81, -94]`  decimal integers.
+- The parser accepts unsigned and signed hexadecimal integer numbers.
+  For example: `[0x123, +0x45, -0x67]` are equal to `[291, 69, -103]` decimals.
+- The format of float-point numbers is fully compatible with C/C++ format.
+  If a modern C++ compiler is used the parser accepts hexadecimal and special
+  floating-point literals as well:
+  `[-1.0, 2., .3e0, 3.e4, 0x21.34p-5, -inf, nan]`.
 
-    The following conventions for floating-point numbers are used:
-    - The exponent suffix of hexadecimal floating-point number is mandatory.
-    - Parsed `NaN` converted to unsigned IEEE-754 `quiet-NaN` value.
+  The following conventions for floating-point numbers are used:
+  - The exponent suffix of hexadecimal floating-point number is mandatory.
+  - Parsed `NaN` converted to unsigned IEEE-754 `quiet-NaN` value.
 
-    Extended floating-point support was tested with:
-    - x64 Windows: `MSVC2015` and higher.
-    - x64 Linux: `LLVM 6.0`, `GCC 4.9` and higher.
+  Extended floating-point support was tested with:
+  - x64 Windows: `MSVC2015` and higher.
+  - x64 Linux: `LLVM 6.0`, `GCC 4.9` and higher.
 
-    For details, see [Use in C++](@ref flatbuffers_guide_use_cpp) section.
+  For details, see [Use in C++](@ref flatbuffers_guide_use_cpp) section.
 
--   For compatibility with a JSON lint tool all numeric literals of scalar
-    fields can be wrapped to quoted string:
-    `"1", "2.0", "0x48A", "0x0C.0Ep-1", "-inf", "true"`.
+- For compatibility with a JSON lint tool all numeric literals of scalar
+  fields can be wrapped to quoted string:
+  `"1", "2.0", "0x48A", "0x0C.0Ep-1", "-inf", "true"`.
 
 ## Guidelines
 
@@ -618,29 +617,38 @@ fields by id/offset.
 #### Schema evolution examples (unions)
 
 Suppose we have the following schema:
+
 ```
 union Foo { A, B }
 ```
+
 We can add another variant at the end.
+
 ```
 union Foo { A, B, another_a: A }
 ```
+
 and this will be okay. Old code will not recognize `another_a`.
 However if we add `another_a` anywhere but the end, e.g.
+
 ```
 union Foo { A, another_a: A, B }
 ```
+
 this is not okay. When new code writes `another_a`, old code will
 misinterpret it as `B` (and vice versa). However you can explicitly
 set the union's "discriminant" value like so:
+
 ```
 union Foo { A = 1, another_a: A = 3, B = 2 }
 ```
+
 This is okay.
 
 ```
 union Foo { original_a: A = 1, another_a: A = 3, B = 2 }
 ```
+
 Renaming fields will break code and any saved human readable representations,
 such as json files, but the binary buffers will be the same.
 
@@ -678,7 +686,7 @@ struct. This way it will return null if it is not present. This will be slightly
 less ergonomic but structs don't take up any more space than the scalar they
 represent.
 
-   [Interface Definition Language]: https://en.wikipedia.org/wiki/Interface_description_language
+[Interface Definition Language]: https://en.wikipedia.org/wiki/Interface_description_language
 
 ## Writing your own code generator.
 

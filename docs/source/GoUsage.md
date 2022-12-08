@@ -1,4 +1,4 @@
-Use in Go    {#flatbuffers_guide_use_go}
+Use in Go {#flatbuffers_guide_use_go}
 =========
 
 ## Before you get started
@@ -67,8 +67,8 @@ Now you can access values like this:
     pos := monster.Pos(nil)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-In some cases it's necessary to modify values in an existing FlatBuffer in place (without creating a copy). For this reason, scalar fields of a Flatbuffer table or struct can be mutated.
+In some cases it's necessary to modify values in an existing FlatBuffer in place (without creating a copy). For this
+reason, scalar fields of a Flatbuffer table or struct can be mutated.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.go}
     monster := example.GetRootAsMonster(buf, 0)
@@ -88,7 +88,8 @@ In some cases it's necessary to modify values in an existing FlatBuffer in place
     }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The term `mutate` is used instead of `set` to indicate that this is a special use case. All mutate functions return a boolean value which is false if the field we're trying to mutate is not available in the buffer.
+The term `mutate` is used instead of `set` to indicate that this is a special use case. All mutate functions return a
+boolean value which is false if the field we're trying to mutate is not available in the buffer.
 
 ## Text Parsing
 

@@ -1,4 +1,4 @@
-Use in Python    {#flatbuffers_guide_use_python}
+Use in Python {#flatbuffers_guide_use_python}
 =============
 
 ## Before you get started

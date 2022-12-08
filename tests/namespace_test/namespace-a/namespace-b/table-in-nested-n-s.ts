@@ -3,85 +3,86 @@
 import * as flatbuffers from 'flatbuffers';
 
 
-
 export class TableInNestedNS {
-  bb: flatbuffers.ByteBuffer|null = null;
+  bb: flatbuffers.ByteBuffer | null = null;
   bb_pos = 0;
-__init(i:number, bb:flatbuffers.ByteBuffer):TableInNestedNS {
-  this.bb_pos = i;
-  this.bb = bb;
-  return this;
-}
 
-static getRootAsTableInNestedNS(bb:flatbuffers.ByteBuffer, obj?:TableInNestedNS):TableInNestedNS {
-  return (obj || new TableInNestedNS()).__init(bb.readInt32(bb.position()) + bb.position(), bb);
-}
-
-static getSizePrefixedRootAsTableInNestedNS(bb:flatbuffers.ByteBuffer, obj?:TableInNestedNS):TableInNestedNS {
-  bb.setPosition(bb.position() + flatbuffers.SIZE_PREFIX_LENGTH);
-  return (obj || new TableInNestedNS()).__init(bb.readInt32(bb.position()) + bb.position(), bb);
-}
-
-foo():number {
-  const offset = this.bb!.__offset(this.bb_pos, 4);
-  return offset ? this.bb!.readInt32(this.bb_pos + offset) : 0;
-}
-
-mutate_foo(value:number):boolean {
-  const offset = this.bb!.__offset(this.bb_pos, 4);
-
-  if (offset === 0) {
-    return false;
+  __init(i: number, bb: flatbuffers.ByteBuffer): TableInNestedNS {
+    this.bb_pos = i;
+    this.bb = bb;
+    return this;
   }
 
-  this.bb!.writeInt32(this.bb_pos + offset, value);
-  return true;
-}
+  static getRootAsTableInNestedNS(bb: flatbuffers.ByteBuffer, obj?: TableInNestedNS): TableInNestedNS {
+    return (obj || new TableInNestedNS()).__init(bb.readInt32(bb.position()) + bb.position(), bb);
+  }
 
-static getFullyQualifiedName():string {
-  return 'NamespaceA.NamespaceB.TableInNestedNS';
-}
+  static getSizePrefixedRootAsTableInNestedNS(bb: flatbuffers.ByteBuffer, obj?: TableInNestedNS): TableInNestedNS {
+    bb.setPosition(bb.position() + flatbuffers.SIZE_PREFIX_LENGTH);
+    return (obj || new TableInNestedNS()).__init(bb.readInt32(bb.position()) + bb.position(), bb);
+  }
 
-static startTableInNestedNS(builder:flatbuffers.Builder) {
-  builder.startObject(1);
-}
+  foo(): number {
+    const offset = this.bb!.__offset(this.bb_pos, 4);
+    return offset ? this.bb!.readInt32(this.bb_pos + offset) : 0;
+  }
 
-static addFoo(builder:flatbuffers.Builder, foo:number) {
-  builder.addFieldInt32(0, foo, 0);
-}
+  mutate_foo(value: number): boolean {
+    const offset = this.bb!.__offset(this.bb_pos, 4);
 
-static endTableInNestedNS(builder:flatbuffers.Builder):flatbuffers.Offset {
-  const offset = builder.endObject();
-  return offset;
-}
+    if (offset === 0) {
+      return false;
+    }
 
-static createTableInNestedNS(builder:flatbuffers.Builder, foo:number):flatbuffers.Offset {
-  TableInNestedNS.startTableInNestedNS(builder);
-  TableInNestedNS.addFoo(builder, foo);
-  return TableInNestedNS.endTableInNestedNS(builder);
-}
+    this.bb!.writeInt32(this.bb_pos + offset, value);
+    return true;
+  }
 
-unpack(): TableInNestedNST {
-  return new TableInNestedNST(
-    this.foo()
-  );
-}
+  static getFullyQualifiedName(): string {
+    return 'NamespaceA.NamespaceB.TableInNestedNS';
+  }
+
+  static startTableInNestedNS(builder: flatbuffers.Builder) {
+    builder.startObject(1);
+  }
+
+  static addFoo(builder: flatbuffers.Builder, foo: number) {
+    builder.addFieldInt32(0, foo, 0);
+  }
+
+  static endTableInNestedNS(builder: flatbuffers.Builder): flatbuffers.Offset {
+    const offset = builder.endObject();
+    return offset;
+  }
+
+  static createTableInNestedNS(builder: flatbuffers.Builder, foo: number): flatbuffers.Offset {
+    TableInNestedNS.startTableInNestedNS(builder);
+    TableInNestedNS.addFoo(builder, foo);
+    return TableInNestedNS.endTableInNestedNS(builder);
+  }
+
+  unpack(): TableInNestedNST {
+    return new TableInNestedNST(
+      this.foo()
+    );
+  }
 
 
-unpackTo(_o: TableInNestedNST): void {
-  _o.foo = this.foo();
-}
+  unpackTo(_o: TableInNestedNST): void {
+    _o.foo = this.foo();
+  }
 }
 
 export class TableInNestedNST {
-constructor(
-  public foo: number = 0
-){}
+  constructor(
+    public foo: number = 0
+  ) {
+  }
 
 
-pack(builder:flatbuffers.Builder): flatbuffers.Offset {
-  return TableInNestedNS.createTableInNestedNS(builder,
-    this.foo
-  );
-}
+  pack(builder: flatbuffers.Builder): flatbuffers.Offset {
+    return TableInNestedNS.createTableInNestedNS(builder,
+      this.foo
+    );
+  }
 }

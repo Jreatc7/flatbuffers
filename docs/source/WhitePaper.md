@@ -1,4 +1,4 @@
-FlatBuffers white paper    {#flatbuffers_white_paper}
+FlatBuffers white paper {#flatbuffers_white_paper}
 =======================
 
 This document tries to shed some light on to the "why" of FlatBuffers, a
@@ -84,45 +84,45 @@ pair or a RGBA color).
 While schemas reduce some generality (you can't just read any data
 without having its schema), they have a lot of upsides:
 
--   Most information about the format can be factored into the generated
-    code, reducing memory needed to store data, and time to access it.
+- Most information about the format can be factored into the generated
+  code, reducing memory needed to store data, and time to access it.
 
--   The strong typing of the data definitions means less error
-    checking/handling at runtime (less can go wrong).
+- The strong typing of the data definitions means less error
+  checking/handling at runtime (less can go wrong).
 
--   A schema enables us to access a buffer without parsing.
+- A schema enables us to access a buffer without parsing.
 
 FlatBuffer schemas are fairly similar to those of the incumbent,
 Protocol Buffers, and generally should be readable to those familiar
 with the C family of languages. We chose to improve upon the features
 offered by .proto files in the following ways:
 
--   Deprecation of fields instead of manual field id assignment.
-    Extending an object in a .proto means hunting for a free slot among
-    the numbers (preferring lower numbers since they have a more compact
-    representation). Besides being inconvenient, it also makes removing
-    fields problematic: you either have to keep them, not making it
-    obvious that this field shouldn't be read/written anymore, and still
-    generating accessors. Or you remove it, but now you risk that
-    there's still old data around that uses that field by the time
-    someone reuses that field id, with nasty consequences.
+- Deprecation of fields instead of manual field id assignment.
+  Extending an object in a .proto means hunting for a free slot among
+  the numbers (preferring lower numbers since they have a more compact
+  representation). Besides being inconvenient, it also makes removing
+  fields problematic: you either have to keep them, not making it
+  obvious that this field shouldn't be read/written anymore, and still
+  generating accessors. Or you remove it, but now you risk that
+  there's still old data around that uses that field by the time
+  someone reuses that field id, with nasty consequences.
 
--   Differentiating between tables and structs (see above). Effectively
-    all table fields are `optional`, and all struct fields are
-    `required`.
+- Differentiating between tables and structs (see above). Effectively
+  all table fields are `optional`, and all struct fields are
+  `required`.
 
--   Having a native vector type instead of `repeated`. This gives you a
-    length without having to collect all items, and in the case of
-    scalars provides for a more compact representation, and one that
-    guarantees adjacency.
+- Having a native vector type instead of `repeated`. This gives you a
+  length without having to collect all items, and in the case of
+  scalars provides for a more compact representation, and one that
+  guarantees adjacency.
 
--   Having a native `union` type instead of using a series of `optional`
-    fields, all of which must be checked individually.
+- Having a native `union` type instead of using a series of `optional`
+  fields, all of which must be checked individually.
 
--   Being able to define defaults for all scalars, instead of having to
-    deal with their optionality at each access.
+- Being able to define defaults for all scalars, instead of having to
+  deal with their optionality at each access.
 
--   A parser that can deal with both schemas and data definitions (JSON
-    compatible) uniformly.
+- A parser that can deal with both schemas and data definitions (JSON
+  compatible) uniformly.
 
 <br>

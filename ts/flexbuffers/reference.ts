@@ -1,9 +1,19 @@
-import { fromByteWidth } from './bit-width-util.js'
-import { ValueType } from './value-type.js'
-import { isNumber, isIndirectNumber, isAVector, fixedTypedVectorElementSize, isFixedTypedVector, isTypedVector, typedVectorElementType, packedType, fixedTypedVectorElementType } from './value-type-util.js'
-import { indirect, keyForIndex, keyIndex, readFloat, readInt, readUInt } from './reference-util.js'
-import { fromUTF8Array } from './flexbuffers-util.js';
-import { BitWidth } from './bit-width.js';
+import {fromByteWidth} from './bit-width-util.js'
+import {ValueType} from './value-type.js'
+import {
+  isNumber,
+  isIndirectNumber,
+  isAVector,
+  fixedTypedVectorElementSize,
+  isFixedTypedVector,
+  isTypedVector,
+  typedVectorElementType,
+  packedType,
+  fixedTypedVectorElementType
+} from './value-type-util.js'
+import {indirect, keyForIndex, keyIndex, readFloat, readInt, readUInt} from './reference-util.js'
+import {fromUTF8Array} from './flexbuffers-util.js';
+import {BitWidth} from './bit-width.js';
 
 export function toReference(buffer: ArrayBuffer): Reference {
   const len = buffer.byteLength;
@@ -32,20 +42,47 @@ export class Reference {
   private readonly byteWidth: number
   private readonly valueType: ValueType
   private _length = -1
+
   constructor(private dataView: DataView, private offset: number, private parentWidth: number, private packedType: ValueType, private path: string) {
     this.byteWidth = 1 << (packedType & 3)
     this.valueType = packedType >> 2
   }
 
-  isNull(): boolean { return this.valueType === ValueType.NULL; }
-  isNumber(): boolean { return isNumber(this.valueType) || isIndirectNumber(this.valueType); }
-  isFloat(): boolean { return ValueType.FLOAT === this.valueType || ValueType.INDIRECT_FLOAT === this.valueType; }
-  isInt(): boolean { return this.isNumber() && !this.isFloat(); }
-  isString(): boolean { return ValueType.STRING === this.valueType || ValueType.KEY === this.valueType; }
-  isBool(): boolean { return ValueType.BOOL === this.valueType; }
-  isBlob(): boolean { return ValueType.BLOB === this.valueType; }
-  isVector(): boolean { return isAVector(this.valueType); }
-  isMap(): boolean { return ValueType.MAP === this.valueType; }
+  isNull(): boolean {
+    return this.valueType === ValueType.NULL;
+  }
+
+  isNumber(): boolean {
+    return isNumber(this.valueType) || isIndirectNumber(this.valueType);
+  }
+
+  isFloat(): boolean {
+    return ValueType.FLOAT === this.valueType || ValueType.INDIRECT_FLOAT === this.valueType;
+  }
+
+  isInt(): boolean {
+    return this.isNumber() && !this.isFloat();
+  }
+
+  isString(): boolean {
+    return ValueType.STRING === this.valueType || ValueType.KEY === this.valueType;
+  }
+
+  isBool(): boolean {
+    return ValueType.BOOL === this.valueType;
+  }
+
+  isBlob(): boolean {
+    return ValueType.BLOB === this.valueType;
+  }
+
+  isVector(): boolean {
+    return isAVector(this.valueType);
+  }
+
+  isMap(): boolean {
+    return ValueType.MAP === this.valueType;
+  }
 
   boolValue(): boolean | null {
     if (this.isBool()) {
@@ -80,7 +117,9 @@ export class Reference {
     return null;
   }
 
-  numericValue(): number | bigint | null { return this.floatValue() || this.intValue()}
+  numericValue(): number | bigint | null {
+    return this.floatValue() || this.intValue()
+  }
 
   stringValue(): string | null {
     if (this.valueType === ValueType.STRING || this.valueType === ValueType.KEY) {

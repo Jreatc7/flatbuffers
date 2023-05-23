@@ -1,22 +1,22 @@
 {
-  "name": "google/flatbuffers",
-  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Google\\FlatBuffers\\": "php"
+    }
+  },
   "description": "FlatBuffers for PHP",
+  "homepage": "https://github.com/google/flatbuffers",
   "keywords": [
     "google",
     "flatbuffers",
     "serialization"
   ],
-  "homepage": "https://github.com/google/flatbuffers",
   "license": "Apache-2.0",
+  "name": "google/flatbuffers",
   "require": {
     "php": ">=5.4"
   },
   "require-dev": {
   },
-  "autoload": {
-    "psr-4": {
-      "Google\\FlatBuffers\\": "php"
-    }
-  }
+  "type": "library"
 }

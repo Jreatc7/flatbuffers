@@ -783,14 +783,19 @@ endif()
 if(FLATBUFFERS_BUILD_TESTS)
   enable_testing()
 
-  add_test(NAME flattests COMMAND flattests)
+set_target_properties(flatsample PROPERTIES LINKER_LANGUAGE CXX)
+  
+  compile_schema_for_samples(samples/monster.fbs "${FLATC_OPT_COMP}")
+
+  target_link_libraries(flatsamplebinary PRIVATE $<BUILD_INTERFACE:ProjectConfig> flatsample)
+  target_link_libraries(flatsampletext PRIVATE $<BUILD_INTERFACE:ProjectConfig> flatsample)
+  target_link_libraries(flatsamplebfbs PRIVATE $<BUILD_INTERFACE:ProjectConfig> flatsample)
+
   if(FLATBUFFERS_BUILD_CPP17)
-    add_test(NAME flattests_cpp17 COMMAND flattests_cpp17)
-  endif()
-  if(FLATBUFFERS_BUILD_GRPCTEST)
-    add_test(NAME grpctest COMMAND grpctest)
-  endif()
-endif()
+    add_executable(flattests_cpp17 ${FlatBuffers_Tests_CPP17_SRCS})
+    target_link_libraries(flattests_cpp17 PRIVATE $<BUILD_INTERFACE:ProjectConfig>)
+    target_include_directories(flattests_cpp17 PUBLIC src tests)
+    target_compile_features(flattests_cpp17 PRIVATE cxx_std_17)
 
 # This target is sync-barrier.
 # Other generate-dependent targets can depend on 'generated_code' only.

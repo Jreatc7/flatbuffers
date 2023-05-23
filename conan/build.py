@@ -3,7 +3,7 @@
 import os
 import re
 import subprocess
-from cpt.packager import ConanMultiPackager
+from conan import ConanMultiPackager
 
 
 

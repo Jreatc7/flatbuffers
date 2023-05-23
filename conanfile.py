@@ -5,7 +5,7 @@
 """
 import os
 import shutil
-from conans import ConanFile, CMake, tools
+from conan import ConanFile, CMake, tools
 
 
 class FlatbuffersConan(ConanFile):

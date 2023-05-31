@@ -6,33 +6,37 @@
       "configurationType": "Debug",
       "inheritEnvironments": [ "msvc_x64_x64" ],
       "buildRoot": "${projectDir}\\out\\build\\${name}",
-      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "installRoot": "C:/Users/jepst/source/repos/CMake/Jepst Repo Directory/CMAKE_INSTALL",
       "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
+      "buildCommandArgs": "-v",
       "ctestCommandArgs": "",
       "variables": [
         {
           "name": "DEBUG_BUILD",
-          "type": "STRING",
-          "value": "Debug"
+          "value": "Debug",
+          "type": "STRING"
         },
         {
           "name": "FLATBUFFERS_ENABLE_PCH",
           "value": "True",
           "type": "BOOL"
         }
-      ]
+      ],
+      "cmakeExecutable": "C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe",
+      "intelliSenseMode": "windows-msvc-x64"
     },
     {
       "name": "x86-Debug",
       "generator": "Ninja",
       "configurationType": "Debug",
       "buildRoot": "${projectDir}\\out\\build\\${name}",
-      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "installRoot": "C:/Users/jepst/source/repos/flatbuffers/out/install/x86-debug/lib/cmake",
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
-      "inheritEnvironments": [ "msvc_x86_x64" ]
+      "inheritEnvironments": [ "msvc_x86_x64" ],
+      "cmakeExecutable": "C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe",
+      "intelliSenseMode": "windows-msvc-x86"
     },
     {
       "name": "x86-Release",
@@ -65,8 +69,7 @@
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
-      "inheritEnvironments": [ "clang_cl_x86" ],
-      "variables": []
+      "inheritEnvironments": [ "clang_cl_x86" ]
     },
     {
       "name": "x64-Clang-Debug",
@@ -77,8 +80,7 @@
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
-      "inheritEnvironments": [ "clang_cl_x64_x64" ],
-      "variables": []
+      "inheritEnvironments": [ "clang_cl_x64_x64" ]
     },
     {
       "name": "x86-Clang-Release",
@@ -89,8 +91,7 @@
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
-      "inheritEnvironments": [ "clang_cl_x86" ],
-      "variables": []
+      "inheritEnvironments": [ "clang_cl_x86" ]
     },
     {
       "name": "x64-Clang-Release",
@@ -102,7 +103,7 @@
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
       "inheritEnvironments": [ "clang_cl_x64_x64" ],
-      "variables": []
+      "intelliSenseMode": "ios-clang-x64"
     }
   ]
 }
